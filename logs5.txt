@@ -1,0 +1,511 @@
+ExecStack
+CompStmt{first=domain.NewStmt@677327b6, second=CompStmt{first=domain.NewStmt@14ae5a5, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )}}}
+AssignStmt{expr=ConstantExpression{value=10}, var='v'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=domain.NewStmt@677327b6, second=CompStmt{first=domain.NewStmt@14ae5a5, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )}}}
+SymbolTable
+v-->10
+Output
+Heap
+ExecStack
+CompStmt{first=domain.NewStmt@14ae5a5, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )}}
+domain.NewStmt@677327b6
+SymbolTable
+v-->10
+Output
+Heap
+ExecStack
+CompStmt{first=domain.NewStmt@14ae5a5, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )}}
+SymbolTable
+v-->2
+Output
+Heap
+2-->20
+ExecStack
+CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )}
+domain.NewStmt@14ae5a5
+SymbolTable
+v-->2
+Output
+Heap
+2-->20
+ExecStack
+CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )}
+SymbolTable
+a-->3
+v-->2
+Output
+Heap
+2-->20
+3-->22
+ExecStack
+print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )
+print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} )
+SymbolTable
+a-->3
+v-->2
+Output
+Heap
+2-->20
+3-->22
+ExecStack
+print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )
+SymbolTable
+a-->3
+v-->2
+Output
+120
+Heap
+2-->20
+3-->22
+ExecStack
+SymbolTable
+a-->3
+v-->2
+Output
+120
+122
+Heap
+2-->20
+3-->22
+ExecStack
+CompStmt{first=domain.NewStmt@677327b6, second=CompStmt{first=domain.NewStmt@14ae5a5, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )}}}
+AssignStmt{expr=ConstantExpression{value=10}, var='v'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=domain.NewStmt@677327b6, second=CompStmt{first=domain.NewStmt@14ae5a5, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )}}}
+SymbolTable
+v-->10
+Output
+Heap
+ExecStack
+CompStmt{first=domain.NewStmt@14ae5a5, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )}}
+domain.NewStmt@677327b6
+SymbolTable
+v-->10
+Output
+Heap
+ExecStack
+CompStmt{first=domain.NewStmt@14ae5a5, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )}}
+SymbolTable
+v-->2
+Output
+Heap
+2-->20
+ExecStack
+CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )}
+domain.NewStmt@14ae5a5
+SymbolTable
+v-->2
+Output
+Heap
+2-->20
+ExecStack
+CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )}
+SymbolTable
+a-->3
+v-->2
+Output
+Heap
+2-->20
+3-->22
+ExecStack
+print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )
+print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} )
+SymbolTable
+a-->3
+v-->2
+Output
+Heap
+2-->20
+3-->22
+ExecStack
+print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )
+SymbolTable
+a-->3
+v-->2
+Output
+120
+Heap
+2-->20
+3-->22
+ExecStack
+SymbolTable
+a-->3
+v-->2
+Output
+120
+122
+Heap
+2-->20
+3-->22
+ExecStack
+CompStmt{first=domain.NewStmt@59f95c5d, second=CompStmt{first=domain.NewStmt@5ccd43c2, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@4aa8f0b4} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7960847b} )}}}
+AssignStmt{expr=ConstantExpression{value=10}, var='v'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=domain.NewStmt@59f95c5d, second=CompStmt{first=domain.NewStmt@5ccd43c2, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@4aa8f0b4} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7960847b} )}}}
+SymbolTable
+v-->10
+Output
+Heap
+ExecStack
+CompStmt{first=domain.NewStmt@5ccd43c2, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@4aa8f0b4} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7960847b} )}}
+domain.NewStmt@59f95c5d
+SymbolTable
+v-->10
+Output
+Heap
+ExecStack
+CompStmt{first=domain.NewStmt@5ccd43c2, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@4aa8f0b4} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7960847b} )}}
+SymbolTable
+v-->2
+Output
+Heap
+2-->20
+ExecStack
+CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@4aa8f0b4} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7960847b} )}
+domain.NewStmt@5ccd43c2
+SymbolTable
+v-->2
+Output
+Heap
+2-->20
+ExecStack
+CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@4aa8f0b4} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7960847b} )}
+SymbolTable
+a-->3
+v-->2
+Output
+Heap
+2-->20
+3-->22
+ExecStack
+print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7960847b} )
+print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@4aa8f0b4} )
+SymbolTable
+a-->3
+v-->2
+Output
+Heap
+2-->20
+3-->22
+ExecStack
+print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7960847b} )
+SymbolTable
+a-->3
+v-->2
+Output
+120
+Heap
+2-->20
+3-->22
+ExecStack
+SymbolTable
+a-->3
+v-->2
+Output
+120
+122
+Heap
+2-->20
+3-->22
+ExecStack
+CompStmt{first=domain.NewStmt@59f95c5d, second=CompStmt{first=domain.NewStmt@5ccd43c2, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@4aa8f0b4} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7960847b} )}}}
+AssignStmt{expr=ConstantExpression{value=10}, var='v'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=domain.NewStmt@59f95c5d, second=CompStmt{first=domain.NewStmt@5ccd43c2, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@4aa8f0b4} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7960847b} )}}}
+SymbolTable
+v-->10
+Output
+Heap
+ExecStack
+CompStmt{first=domain.NewStmt@5ccd43c2, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@4aa8f0b4} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7960847b} )}}
+domain.NewStmt@59f95c5d
+SymbolTable
+v-->10
+Output
+Heap
+ExecStack
+CompStmt{first=domain.NewStmt@5ccd43c2, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@4aa8f0b4} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7960847b} )}}
+SymbolTable
+v-->2
+Output
+Heap
+2-->20
+ExecStack
+CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@4aa8f0b4} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7960847b} )}
+domain.NewStmt@5ccd43c2
+SymbolTable
+v-->2
+Output
+Heap
+2-->20
+ExecStack
+CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@4aa8f0b4} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7960847b} )}
+SymbolTable
+a-->3
+v-->2
+Output
+Heap
+2-->20
+3-->22
+ExecStack
+print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7960847b} )
+print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@4aa8f0b4} )
+SymbolTable
+a-->3
+v-->2
+Output
+Heap
+2-->20
+3-->22
+ExecStack
+print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7960847b} )
+SymbolTable
+a-->3
+v-->2
+Output
+120
+Heap
+2-->20
+3-->22
+ExecStack
+SymbolTable
+a-->3
+v-->2
+Output
+120
+122
+Heap
+2-->20
+3-->22
+ExecStack
+CompStmt{first=domain.NewStmt@677327b6, second=CompStmt{first=domain.NewStmt@14ae5a5, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )}}}
+AssignStmt{expr=ConstantExpression{value=10}, var='v'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=domain.NewStmt@677327b6, second=CompStmt{first=domain.NewStmt@14ae5a5, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )}}}
+SymbolTable
+v-->10
+Output
+Heap
+ExecStack
+CompStmt{first=domain.NewStmt@14ae5a5, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )}}
+domain.NewStmt@677327b6
+SymbolTable
+v-->10
+Output
+Heap
+ExecStack
+CompStmt{first=domain.NewStmt@14ae5a5, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )}}
+SymbolTable
+v-->2
+Output
+Heap
+2-->20
+ExecStack
+CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )}
+domain.NewStmt@14ae5a5
+SymbolTable
+v-->2
+Output
+Heap
+2-->20
+ExecStack
+CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )}
+SymbolTable
+a-->3
+v-->2
+Output
+Heap
+2-->20
+3-->22
+ExecStack
+print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )
+print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} )
+SymbolTable
+a-->3
+v-->2
+Output
+Heap
+2-->20
+3-->22
+ExecStack
+print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )
+SymbolTable
+a-->3
+v-->2
+Output
+120
+Heap
+2-->20
+3-->22
+ExecStack
+SymbolTable
+a-->3
+v-->2
+Output
+120
+122
+Heap
+2-->20
+3-->22
+ExecStack
+CompStmt{first=domain.NewStmt@677327b6, second=CompStmt{first=domain.NewStmt@14ae5a5, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )}}}
+AssignStmt{expr=ConstantExpression{value=10}, var='v'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=domain.NewStmt@677327b6, second=CompStmt{first=domain.NewStmt@14ae5a5, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )}}}
+SymbolTable
+v-->10
+Output
+Heap
+ExecStack
+CompStmt{first=domain.NewStmt@14ae5a5, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )}}
+domain.NewStmt@677327b6
+SymbolTable
+v-->10
+Output
+Heap
+ExecStack
+CompStmt{first=domain.NewStmt@14ae5a5, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )}}
+SymbolTable
+v-->2
+Output
+Heap
+2-->20
+ExecStack
+CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )}
+domain.NewStmt@14ae5a5
+SymbolTable
+v-->2
+Output
+Heap
+2-->20
+ExecStack
+CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )}
+SymbolTable
+a-->3
+v-->2
+Output
+Heap
+2-->20
+3-->22
+ExecStack
+print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )
+print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@7f31245a} )
+SymbolTable
+a-->3
+v-->2
+Output
+Heap
+2-->20
+3-->22
+ExecStack
+print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=domain.ReadHeapExpression@6d6f6e28} )
+SymbolTable
+a-->3
+v-->2
+Output
+120
+Heap
+2-->20
+3-->22
+ExecStack
+SymbolTable
+a-->3
+v-->2
+Output
+120
+122
+Heap
+2-->20
+3-->22
+ExecStack
+CompStmt{first=NewStmt{variable='v', address=2, expression=ConstantExpression{value=20}}, second=CompStmt{first=NewStmt{variable='a', address=3, expression=ConstantExpression{value=22}}, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=ReadHeapExpression{variable='v'}} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=ReadHeapExpression{variable='a'}} )}}}
+AssignStmt{expr=ConstantExpression{value=10}, var='v'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=NewStmt{variable='v', address=2, expression=ConstantExpression{value=20}}, second=CompStmt{first=NewStmt{variable='a', address=3, expression=ConstantExpression{value=22}}, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=ReadHeapExpression{variable='v'}} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=ReadHeapExpression{variable='a'}} )}}}
+SymbolTable
+v-->10
+Output
+Heap
+ExecStack
+CompStmt{first=NewStmt{variable='a', address=3, expression=ConstantExpression{value=22}}, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=ReadHeapExpression{variable='v'}} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=ReadHeapExpression{variable='a'}} )}}
+NewStmt{variable='v', address=2, expression=ConstantExpression{value=20}}
+SymbolTable
+v-->10
+Output
+Heap
+ExecStack
+CompStmt{first=NewStmt{variable='a', address=3, expression=ConstantExpression{value=22}}, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=ReadHeapExpression{variable='v'}} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=ReadHeapExpression{variable='a'}} )}}
+SymbolTable
+v-->2
+Output
+Heap
+2-->20
+ExecStack
+CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=ReadHeapExpression{variable='v'}} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=ReadHeapExpression{variable='a'}} )}
+NewStmt{variable='a', address=3, expression=ConstantExpression{value=22}}
+SymbolTable
+v-->2
+Output
+Heap
+2-->20
+ExecStack
+CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=ReadHeapExpression{variable='v'}} ), second=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=ReadHeapExpression{variable='a'}} )}
+SymbolTable
+a-->3
+v-->2
+Output
+Heap
+2-->20
+3-->22
+ExecStack
+print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=ReadHeapExpression{variable='a'}} )
+print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=ReadHeapExpression{variable='v'}} )
+SymbolTable
+a-->3
+v-->2
+Output
+Heap
+2-->20
+3-->22
+ExecStack
+print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=ReadHeapExpression{variable='a'}} )
+SymbolTable
+a-->3
+v-->2
+Output
+120
+Heap
+2-->20
+3-->22
+ExecStack
+SymbolTable
+a-->3
+v-->2
+Output
+120
+122
+Heap
+2-->20
+3-->22

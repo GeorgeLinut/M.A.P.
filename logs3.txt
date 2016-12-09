@@ -1,0 +1,173 @@
+ExecStack
+CompStmt{first=ReadRFileStmt{f='file', VarName='a'}, second=CompStmt{first=ReadRFileStmt{f='file', VarName='b'}, second=CompStmt{first=print( VarExpression{name='a'} ), second=CompStmt{first=print( VarExpression{name='b'} ), second=CloseRStmt{fileId='file'}}}}}
+OpenRFileStmt{filename='test.txt', fileID='file'}
+SymbolTable
+Output
+ExecStack
+CompStmt{first=ReadRFileStmt{f='file', VarName='a'}, second=CompStmt{first=ReadRFileStmt{f='file', VarName='b'}, second=CompStmt{first=print( VarExpression{name='a'} ), second=CompStmt{first=print( VarExpression{name='b'} ), second=CloseRStmt{fileId='file'}}}}}
+SymbolTable
+file-->3
+Output
+ExecStack
+CompStmt{first=ReadRFileStmt{f='file', VarName='b'}, second=CompStmt{first=print( VarExpression{name='a'} ), second=CompStmt{first=print( VarExpression{name='b'} ), second=CloseRStmt{fileId='file'}}}}
+ReadRFileStmt{f='file', VarName='a'}
+SymbolTable
+file-->3
+Output
+ExecStack
+CompStmt{first=ReadRFileStmt{f='file', VarName='b'}, second=CompStmt{first=print( VarExpression{name='a'} ), second=CompStmt{first=print( VarExpression{name='b'} ), second=CloseRStmt{fileId='file'}}}}
+SymbolTable
+file-->3
+a-->1
+Output
+ExecStack
+CompStmt{first=print( VarExpression{name='a'} ), second=CompStmt{first=print( VarExpression{name='b'} ), second=CloseRStmt{fileId='file'}}}
+ReadRFileStmt{f='file', VarName='b'}
+SymbolTable
+file-->3
+a-->1
+Output
+ExecStack
+CompStmt{first=print( VarExpression{name='a'} ), second=CompStmt{first=print( VarExpression{name='b'} ), second=CloseRStmt{fileId='file'}}}
+SymbolTable
+b-->2
+file-->3
+a-->1
+Output
+ExecStack
+CompStmt{first=print( VarExpression{name='b'} ), second=CloseRStmt{fileId='file'}}
+print( VarExpression{name='a'} )
+SymbolTable
+b-->2
+file-->3
+a-->1
+Output
+ExecStack
+CompStmt{first=print( VarExpression{name='b'} ), second=CloseRStmt{fileId='file'}}
+SymbolTable
+b-->2
+file-->3
+a-->1
+Output
+1
+ExecStack
+CloseRStmt{fileId='file'}
+print( VarExpression{name='b'} )
+SymbolTable
+b-->2
+file-->3
+a-->1
+Output
+1
+ExecStack
+CloseRStmt{fileId='file'}
+SymbolTable
+b-->2
+file-->3
+a-->1
+Output
+1
+2
+ExecStack
+SymbolTable
+b-->2
+file-->3
+a-->1
+Output
+1
+2
+ExecStack
+CompStmt{first=ReadRFileStmt{f='file', VarName='a'}, second=CompStmt{first=ReadRFileStmt{f='file', VarName='b'}, second=CompStmt{first=print( VarExpression{name='a'} ), second=CompStmt{first=print( VarExpression{name='b'} ), second=CloseRStmt{fileId='file'}}}}}
+OpenRFileStmt{filename='test.txt', fileID='file'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=ReadRFileStmt{f='file', VarName='a'}, second=CompStmt{first=ReadRFileStmt{f='file', VarName='b'}, second=CompStmt{first=print( VarExpression{name='a'} ), second=CompStmt{first=print( VarExpression{name='b'} ), second=CloseRStmt{fileId='file'}}}}}
+OpenRFileStmt{filename='test.txt', fileID='file'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=ReadRFileStmt{f='file', VarName='a'}, second=CompStmt{first=ReadRFileStmt{f='file', VarName='b'}, second=CompStmt{first=print( VarExpression{name='a'} ), second=CompStmt{first=print( VarExpression{name='b'} ), second=CloseRStmt{fileId='file'}}}}}
+SymbolTable
+file-->3
+Output
+Heap
+ExecStack
+CompStmt{first=ReadRFileStmt{f='file', VarName='b'}, second=CompStmt{first=print( VarExpression{name='a'} ), second=CompStmt{first=print( VarExpression{name='b'} ), second=CloseRStmt{fileId='file'}}}}
+ReadRFileStmt{f='file', VarName='a'}
+SymbolTable
+file-->3
+Output
+Heap
+ExecStack
+CompStmt{first=ReadRFileStmt{f='file', VarName='b'}, second=CompStmt{first=print( VarExpression{name='a'} ), second=CompStmt{first=print( VarExpression{name='b'} ), second=CloseRStmt{fileId='file'}}}}
+SymbolTable
+a-->1
+file-->3
+Output
+Heap
+ExecStack
+CompStmt{first=print( VarExpression{name='a'} ), second=CompStmt{first=print( VarExpression{name='b'} ), second=CloseRStmt{fileId='file'}}}
+ReadRFileStmt{f='file', VarName='b'}
+SymbolTable
+a-->1
+file-->3
+Output
+Heap
+ExecStack
+CompStmt{first=print( VarExpression{name='a'} ), second=CompStmt{first=print( VarExpression{name='b'} ), second=CloseRStmt{fileId='file'}}}
+SymbolTable
+a-->1
+b-->2
+file-->3
+Output
+Heap
+ExecStack
+CompStmt{first=print( VarExpression{name='b'} ), second=CloseRStmt{fileId='file'}}
+print( VarExpression{name='a'} )
+SymbolTable
+a-->1
+b-->2
+file-->3
+Output
+Heap
+ExecStack
+CompStmt{first=print( VarExpression{name='b'} ), second=CloseRStmt{fileId='file'}}
+SymbolTable
+a-->1
+b-->2
+file-->3
+Output
+1
+Heap
+ExecStack
+CloseRStmt{fileId='file'}
+print( VarExpression{name='b'} )
+SymbolTable
+a-->1
+b-->2
+file-->3
+Output
+1
+Heap
+ExecStack
+CloseRStmt{fileId='file'}
+SymbolTable
+a-->1
+b-->2
+file-->3
+Output
+1
+2
+Heap
+ExecStack
+SymbolTable
+a-->1
+b-->2
+file-->3
+Output
+1
+2
+Heap

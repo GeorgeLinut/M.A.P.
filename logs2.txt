@@ -1,0 +1,78 @@
+ExecStack
+CompStmt{first=If(VarExpression{name='a'})
+then( AssignStmt{expr=ConstantExpression{value=2}, var='v'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='v'} ), second=print( VarExpression{name='v'} )}
+AssignStmt{expr=ArithmeticExpression{operand1=ConstantExpression{value=2}, operator=-, operand2=ConstantExpression{value=2}}, var='a'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=If(VarExpression{name='a'})
+then( AssignStmt{expr=ConstantExpression{value=2}, var='v'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='v'} ), second=print( VarExpression{name='v'} )}
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+print( VarExpression{name='v'} )
+If(VarExpression{name='a'})
+then( AssignStmt{expr=ConstantExpression{value=2}, var='v'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='v'} )
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+print( VarExpression{name='v'} )
+SymbolTable
+a-->0
+v-->3
+Output
+Heap
+ExecStack
+SymbolTable
+a-->0
+v-->3
+Output
+3
+Heap
+ExecStack
+CompStmt{first=If(VarExpression{name='a'})
+then( AssignStmt{expr=ConstantExpression{value=2}, var='v'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='v'} ), second=print( VarExpression{name='v'} )}
+AssignStmt{expr=ArithmeticExpression{operand1=ConstantExpression{value=2}, operator=-, operand2=ConstantExpression{value=2}}, var='a'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=If(VarExpression{name='a'})
+then( AssignStmt{expr=ConstantExpression{value=2}, var='v'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='v'} ), second=print( VarExpression{name='v'} )}
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+print( VarExpression{name='v'} )
+If(VarExpression{name='a'})
+then( AssignStmt{expr=ConstantExpression{value=2}, var='v'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='v'} )
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+print( VarExpression{name='v'} )
+SymbolTable
+a-->0
+v-->3
+Output
+Heap
+ExecStack
+SymbolTable
+a-->0
+v-->3
+Output
+3
+Heap

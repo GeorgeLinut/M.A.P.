@@ -1,0 +1,335 @@
+ExecStack
+CompStmt{first=If(domain.BooleanExpression@6e0be858)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='v'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='v'} ), second=print( VarExpression{name='v'} )}
+AssignStmt{expr=ArithmeticExpression{operand1=ConstantExpression{value=2}, operator=-, operand2=ConstantExpression{value=2}}, var='a'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=If(domain.BooleanExpression@6e0be858)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='v'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='v'} ), second=print( VarExpression{name='v'} )}
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+print( VarExpression{name='v'} )
+If(domain.BooleanExpression@6e0be858)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='v'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='v'} )
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+print( VarExpression{name='v'} )
+SymbolTable
+a-->0
+v-->2
+Output
+Heap
+ExecStack
+SymbolTable
+a-->0
+v-->2
+Output
+2
+Heap
+ExecStack
+CompStmt{first=If(domain.BooleanExpression@6e0be858)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} ), second=print( VarExpression{name='a'} )}
+AssignStmt{expr=ArithmeticExpression{operand1=ConstantExpression{value=2}, operator=-, operand2=ConstantExpression{value=2}}, var='a'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=If(domain.BooleanExpression@6e0be858)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} ), second=print( VarExpression{name='a'} )}
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+print( VarExpression{name='a'} )
+If(domain.BooleanExpression@6e0be858)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} )
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+print( VarExpression{name='a'} )
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+SymbolTable
+a-->0
+Output
+0
+Heap
+ExecStack
+CompStmt{first=If(domain.BooleanExpression@707f7052)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} ), second=print( VarExpression{name='a'} )}
+AssignStmt{expr=ArithmeticExpression{operand1=ConstantExpression{value=2}, operator=-, operand2=ConstantExpression{value=2}}, var='a'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=If(domain.BooleanExpression@707f7052)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} ), second=print( VarExpression{name='a'} )}
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+print( VarExpression{name='a'} )
+If(domain.BooleanExpression@707f7052)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} )
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+print( VarExpression{name='a'} )
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+SymbolTable
+a-->0
+Output
+0
+Heap
+ExecStack
+CompStmt{first=If(domain.BooleanExpression@6e0be858)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} ), second=print( VarExpression{name='a'} )}
+AssignStmt{expr=ArithmeticExpression{operand1=ConstantExpression{value=2}, operator=-, operand2=ConstantExpression{value=2}}, var='a'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=If(domain.BooleanExpression@6e0be858)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} ), second=print( VarExpression{name='a'} )}
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+print( VarExpression{name='a'} )
+If(domain.BooleanExpression@6e0be858)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} )
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+print( VarExpression{name='a'} )
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+SymbolTable
+a-->0
+Output
+0
+Heap
+ExecStack
+CompStmt{first=If(domain.BooleanExpression@707f7052)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} ), second=print( VarExpression{name='a'} )}
+AssignStmt{expr=ArithmeticExpression{operand1=ConstantExpression{value=2}, operator=-, operand2=ConstantExpression{value=2}}, var='a'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=If(domain.BooleanExpression@707f7052)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} ), second=print( VarExpression{name='a'} )}
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+print( VarExpression{name='a'} )
+If(domain.BooleanExpression@707f7052)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} )
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+print( VarExpression{name='a'} )
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+SymbolTable
+a-->0
+Output
+0
+Heap
+ExecStack
+CompStmt{first=If(domain.BooleanExpression@707f7052)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} ), second=print( VarExpression{name='a'} )}
+AssignStmt{expr=ArithmeticExpression{operand1=ConstantExpression{value=2}, operator=-, operand2=ConstantExpression{value=2}}, var='a'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=If(domain.BooleanExpression@707f7052)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} ), second=print( VarExpression{name='a'} )}
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+print( VarExpression{name='a'} )
+If(domain.BooleanExpression@707f7052)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} )
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+print( VarExpression{name='a'} )
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+SymbolTable
+a-->0
+Output
+0
+Heap
+ExecStack
+CompStmt{first=If(domain.BooleanExpression@6e0be858)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} ), second=print( VarExpression{name='a'} )}
+AssignStmt{expr=ArithmeticExpression{operand1=ConstantExpression{value=2}, operator=-, operand2=ConstantExpression{value=2}}, var='a'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=If(domain.BooleanExpression@6e0be858)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} ), second=print( VarExpression{name='a'} )}
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+print( VarExpression{name='a'} )
+If(domain.BooleanExpression@6e0be858)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} )
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+print( VarExpression{name='a'} )
+SymbolTable
+a-->2
+Output
+Heap
+ExecStack
+SymbolTable
+a-->2
+Output
+2
+Heap
+ExecStack
+CompStmt{first=If(domain.BooleanExpression@6e0be858)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} ), second=print( VarExpression{name='a'} )}
+AssignStmt{expr=ArithmeticExpression{operand1=ConstantExpression{value=2}, operator=-, operand2=ConstantExpression{value=2}}, var='a'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=If(domain.BooleanExpression@6e0be858)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} ), second=print( VarExpression{name='a'} )}
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+print( VarExpression{name='a'} )
+If(domain.BooleanExpression@6e0be858)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} )
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+print( VarExpression{name='a'} )
+SymbolTable
+a-->3
+Output
+Heap
+ExecStack
+SymbolTable
+a-->3
+Output
+3
+Heap
+ExecStack
+CompStmt{first=If(domain.BooleanExpression@6e0be858)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} ), second=print( VarExpression{name='a'} )}
+AssignStmt{expr=ArithmeticExpression{operand1=ConstantExpression{value=2}, operator=-, operand2=ConstantExpression{value=2}}, var='a'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=If(domain.BooleanExpression@6e0be858)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} ), second=print( VarExpression{name='a'} )}
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+print( VarExpression{name='a'} )
+If(domain.BooleanExpression@6e0be858)
+then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
+else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} )
+SymbolTable
+a-->0
+Output
+Heap
+ExecStack
+print( VarExpression{name='a'} )
+SymbolTable
+a-->3
+Output
+Heap
+ExecStack
+SymbolTable
+a-->3
+Output
+3
+Heap
