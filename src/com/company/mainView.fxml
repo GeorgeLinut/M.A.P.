@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.MainViewController">
+    <left>
+        <StackPane>
+            <ListView fx:id = "options">
+
+            </ListView>
+        </StackPane>
+    </left>
+    <right>
+        <Button>
+            b1
+        </Button>
+    </right>
+</BorderPane>

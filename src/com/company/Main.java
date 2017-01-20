@@ -10,7 +10,8 @@ import view.*;
 
 import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
-import java.util.HashSet;
+import java.lang.reflect.Array;
+import java.util.*;
 
 public class Main {
 
@@ -182,8 +183,6 @@ public class Main {
         FileTable<Integer,FileData> fileTable12 = new FileTableImpl<>();
         PrgState state12 = new PrgState(execStack12,symbolTable12,output12,st112,fileTable12,heap12);
         repo12.addPrg(state12);
-
-
         TextMenu textMenu = new TextMenu();
         textMenu.addCommand(new RunExampleCommand("1",st1.toString(),controller1));
         textMenu.addCommand(new RunExampleCommand("2",st2.toString(),controller2));
@@ -199,6 +198,8 @@ public class Main {
         textMenu.addCommand(new RunConcurrentExampleCommand("12","Concurent Example",controller12));
         textMenu.addCommand(new ExitCommand("0"," Exit"));
         textMenu.show();
+
+
     }
 
 
