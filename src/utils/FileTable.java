@@ -1,6 +1,7 @@
 package utils;
 
 import java.io.Serializable;
+import java.util.Iterator;
 import java.util.Map;
 
 /**
@@ -11,5 +12,5 @@ public interface FileTable<K,V> extends Serializable {
     V get(K desc);
     void remove(K desc);
     Iterable<Map.Entry<K,V>> getAll();
-
+    public Iterator iterator();
 }

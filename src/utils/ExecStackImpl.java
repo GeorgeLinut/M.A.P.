@@ -3,6 +3,7 @@ package utils;
 import utils.ExecStack;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Stack;
 
 /**
@@ -33,6 +34,11 @@ public class ExecStackImpl<T> implements ExecStack<T> {
     @Override
     public T top() {
         return stack.peek();
+    }
+
+    @Override
+    public Iterator<T> iterator() {
+        return stack.iterator();
     }
 
     public void setAll(ArrayList<T> list){

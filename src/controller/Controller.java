@@ -2,6 +2,7 @@ package controller;
 
 import domain.PrgState;
 import domain.Statement;
+import javafx.scene.control.Alert;
 import repo.Repository;
 import utils.*;
 
@@ -76,6 +77,9 @@ public class Controller implements Serializable {
 
     }
 
+    public List<PrgState> getProgramStates(){
+        return repo.getAll();
+    }
 
     public void serialize(String fileName) {
         this.repo.serialize(this.repo.getCurrent(), fileName);
@@ -131,5 +135,26 @@ public class Controller implements Serializable {
         }
 
         executorService.shutdownNow();
+    }
+
+    public void allStepGUI() {
+        executorService = Executors.newFixedThreadPool(2);
+        List<PrgState> prgStateList = removeCompletedPrgState(repo.getAll());
+        if (prgStateList.size()==0){
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setContentText("Program finished!");
+            alert.showAndWait();
+            executorService.shutdownNow();
+        }
+        else {
+            try {
+                oneStepAllPrg(prgStateList);
+            } catch (Exception e) {
+                Alert alert=new Alert(Alert.AlertType.CONFIRMATION);
+                alert.setContentText("Program finished!" + e.getMessage());
+                alert.showAndWait();
+            }
+            executorService.shutdownNow();
+        }
     }
 }

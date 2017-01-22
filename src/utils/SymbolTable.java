@@ -1,6 +1,7 @@
 package utils;
 
 import java.io.Serializable;
+import java.util.Iterator;
 
 /**
  * Created by glinut on 11/1/2016.
@@ -12,4 +13,5 @@ public interface SymbolTable<K,V> extends Serializable {
     public void setValue(K key,V Value);
     public int size();
     public SymbolTable<K,V> clone();
+    public Iterator iterator();
 }

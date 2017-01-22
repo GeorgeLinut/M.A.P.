@@ -1,6 +1,7 @@
 package utils;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Created by glinut on 11/4/2016.
@@ -28,4 +29,8 @@ public class OutputImpl<T> implements Output<T> {
     public ArrayList<T> getAll(){
         return out;
     }
+
+    public Iterator<T> iterator(){
+        return out.iterator();
+    };
 }

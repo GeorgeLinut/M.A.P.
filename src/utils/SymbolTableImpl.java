@@ -3,6 +3,7 @@ package utils;
 import utils.SymbolTable;
 
 import java.util.HashMap;
+import java.util.Iterator;
 
 /**
  * Created by glinut on 11/1/2016.
@@ -51,6 +52,11 @@ public class SymbolTableImpl<K,V> implements SymbolTable<K,V> {
             newTable.add(key,value);
         }
         return newTable;
+    }
+
+    @Override
+    public Iterator iterator() {
+        return table.entrySet().iterator();
     }
 
     @Override

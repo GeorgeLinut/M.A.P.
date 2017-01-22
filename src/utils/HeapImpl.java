@@ -3,6 +3,7 @@ package utils;
 import exceptions.InterpretorException;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 /**
@@ -48,6 +49,11 @@ public class HeapImpl<K,V> implements Heap<K,V> {
     @Override
     public Iterable<Map.Entry<K, V>> getAll() {
         return (Iterable<Map.Entry<K, V>>) this.table;
+    }
+
+    @Override
+    public Iterator iterator() {
+        return table.entrySet().iterator();
     }
 
 

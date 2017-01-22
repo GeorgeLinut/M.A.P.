@@ -1,6 +1,7 @@
 package utils;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 /**
@@ -27,6 +28,10 @@ public class FileTableImpl<K,V> implements FileTable<K,V> {
     public void remove(K desc) {
         this.table.remove(desc);
     }
+
+    public Iterator iterator(){
+        return this.table.entrySet().iterator();
+    };
 
     @Override
     public Iterable<Map.Entry<K, V>> getAll() {
