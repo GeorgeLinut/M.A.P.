@@ -5,11 +5,13 @@ import exceptions.InterpretorException;
 import utils.*;
 
 import java.io.Serializable;
+import java.util.Stack;
 
 /**
  * Created by glinut on 11/4/2016.
  */
 public class PrgState implements Serializable {
+    private Stack<SymbolTable<String,Integer>> symbolTables;
     private Integer id;
     private ExecStack<Statement> execStack;
     private SymbolTable<String,Integer> st;
@@ -17,23 +19,6 @@ public class PrgState implements Serializable {
     private Statement prg;
     private FileTable<Integer,FileData> ft;
     private  Heap<Integer,Integer>heap;
-
-    public PrgState(SymbolTable<String, Integer> st, ExecStack<Statement> execStack, Output<Integer> out, Statement prg) {
-        this.execStack = execStack;
-        this.out=out;
-        this.st=st;
-        this.prg = prg;
-        execStack.push(prg);
-    }
-
-    public PrgState( SymbolTable<String, Integer> st,ExecStack<Statement> execStack, Output<Integer> out, Statement prg, FileTable<Integer, FileData> ft) {
-        this.execStack = execStack;
-        this.st = st;
-        this.out = out;
-        this.prg = prg;
-        this.ft = ft;
-        execStack.push(prg);
-    }
 
     public PrgState(ExecStack<Statement> execStack, SymbolTable<String, Integer> st, Output<Integer> out, Statement prg, FileTable<Integer, FileData> ft, Heap<Integer, Integer> heap) {
         id = PrgStateIdGenerator.generate();

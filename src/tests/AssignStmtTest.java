@@ -15,7 +15,9 @@ public class AssignStmtTest extends TestCase {
     Statement st2;
     Statement st3;
     Statement st4;
-    PrgState prgState = new PrgState(symbolTable,execStack,output,new AssignStmt(new ConstantExpression(2),"aa"));
+    FileTableImpl<Integer,FileData> fl = new FileTableImpl<>();
+    HeapImpl<Integer,Integer> heap = new HeapImpl<>();
+    PrgState prgState = new PrgState(execStack,symbolTable,output,new AssignStmt(new ConstantExpression(2),"aa"),fl,heap);
     public void setUp(){
         st1=new AssignStmt(new ConstantExpression(1),"a");
         st2=new AssignStmt(new ArithmeticExpression('*',new ConstantExpression(2),new ConstantExpression(2)),"b");

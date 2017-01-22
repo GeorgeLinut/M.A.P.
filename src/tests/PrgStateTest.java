@@ -5,10 +5,7 @@ import domain.ConstantExpression;
 import domain.PrgState;
 import domain.Statement;
 import junit.framework.TestCase;
-import utils.ExecStack;
-import utils.ExecStackImpl;
-import utils.OutputImpl;
-import utils.SymbolTableImpl;
+import utils.*;
 
 /**
  * Created by glinut on 11/8/2016.
@@ -18,7 +15,9 @@ public class PrgStateTest extends TestCase {
     ExecStackImpl<Statement> execStack = new ExecStackImpl<>();
     OutputImpl<Integer> output = new OutputImpl<>();
     Statement st1= new AssignStmt(new ConstantExpression(2),"aa");
-    PrgState prgState = new PrgState(symbolTable,execStack,output,st1);
+    FileTableImpl<Integer, FileData> fl = new FileTableImpl<>();
+    HeapImpl<Integer,Integer> heap = new HeapImpl<>();
+    PrgState prgState = new PrgState(execStack,symbolTable,output,st1,fl,heap);
     public void setUp() throws Exception {
         super.setUp();
 

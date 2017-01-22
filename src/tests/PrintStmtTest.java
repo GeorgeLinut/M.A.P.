@@ -2,9 +2,7 @@ package tests;
 
 import domain.*;
 import junit.framework.TestCase;
-import utils.ExecStackImpl;
-import utils.OutputImpl;
-import utils.SymbolTableImpl;
+import utils.*;
 
 /**
  * Created by glinut on 11/8/2016.
@@ -17,7 +15,9 @@ public class PrintStmtTest extends TestCase {
     Statement st2;
     Statement st3;
     Statement st4;
-    PrgState prgState = new PrgState(symbolTable,execStack,output,new AssignStmt(new ConstantExpression(2),"aa"));
+    FileTableImpl<Integer,FileData> fl = new FileTableImpl<>();
+    HeapImpl<Integer,Integer> heap = new HeapImpl<>();
+    PrgState prgState = new PrgState(execStack,symbolTable,output,new AssignStmt(new ConstantExpression(2),"aa"),fl,heap);
     public void setUp() throws Exception {
         st1=new PrintStmt(new ConstantExpression(1));
         st2=new PrintStmt(new ConstantExpression(12));

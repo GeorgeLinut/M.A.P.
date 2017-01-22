@@ -4,9 +4,7 @@ import controller.Controller;
 import domain.*;
 import junit.framework.TestCase;
 import repo.RepositoryImpl;
-import utils.ExecStackImpl;
-import utils.OutputImpl;
-import utils.SymbolTableImpl;
+import utils.*;
 
 import java.util.ArrayList;
 
@@ -20,7 +18,9 @@ public class ControllerTest extends TestCase {
     Statement st1=new PrintStmt(new ConstantExpression(1));
     Statement st2=new PrintStmt(new ConstantExpression(12));
     Statement st5=new CompStmt(st1,st2);
-    PrgState prgState = new PrgState(symbolTable,execStack,output,st5);
+    FileTableImpl<Integer,FileData> fl = new FileTableImpl<>();
+    HeapImpl<Integer,Integer> heap = new HeapImpl<>();
+    PrgState prgState = new PrgState(execStack,symbolTable,output,st5,fl,heap);
     RepositoryImpl repository = new RepositoryImpl();
     Controller controller =new Controller(repository);
     public void setUp() throws Exception {
