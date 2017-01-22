@@ -17,7 +17,9 @@ public class PrintStmtTest extends TestCase {
     Statement st4;
     FileTableImpl<Integer,FileData> fl = new FileTableImpl<>();
     HeapImpl<Integer,Integer> heap = new HeapImpl<>();
-    PrgState prgState = new PrgState(execStack,symbolTable,output,new AssignStmt(new ConstantExpression(2),"aa"),fl,heap);
+    ProcTable<String,ProcData> pt = new ProcTableImpl<>();
+
+    PrgState prgState = new PrgState(execStack,symbolTable,output,new AssignStmt(new ConstantExpression(2),"aa"),fl,heap,pt);
     public void setUp() throws Exception {
         st1=new PrintStmt(new ConstantExpression(1));
         st2=new PrintStmt(new ConstantExpression(12));

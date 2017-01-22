@@ -128,3 +128,36 @@ Output
 1
 Heap
 1-->20
+ExecStack
+CompStmt{first=NewStmt{variable='v', address=1, expression=ConstantExpression{value=20}}, second=print( VarExpression{name='v'} )}
+AssignStmt{expr=ConstantExpression{value=10}, var='v'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=NewStmt{variable='v', address=1, expression=ConstantExpression{value=20}}, second=print( VarExpression{name='v'} )}
+SymbolTable
+v-->10
+Output
+Heap
+ExecStack
+print( VarExpression{name='v'} )
+NewStmt{variable='v', address=1, expression=ConstantExpression{value=20}}
+SymbolTable
+v-->10
+Output
+Heap
+ExecStack
+print( VarExpression{name='v'} )
+SymbolTable
+v-->1
+Output
+Heap
+1-->20
+ExecStack
+SymbolTable
+v-->1
+Output
+1
+Heap
+1-->20

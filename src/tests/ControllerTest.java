@@ -20,7 +20,9 @@ public class ControllerTest extends TestCase {
     Statement st5=new CompStmt(st1,st2);
     FileTableImpl<Integer,FileData> fl = new FileTableImpl<>();
     HeapImpl<Integer,Integer> heap = new HeapImpl<>();
-    PrgState prgState = new PrgState(execStack,symbolTable,output,st5,fl,heap);
+    ProcTable<String,ProcData> pt = new ProcTableImpl<>();
+
+    PrgState prgState = new PrgState(execStack,symbolTable,output,st5,fl,heap,pt);
     RepositoryImpl repository = new RepositoryImpl();
     Controller controller =new Controller(repository);
     public void setUp() throws Exception {

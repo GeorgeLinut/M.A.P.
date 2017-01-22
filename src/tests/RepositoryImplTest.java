@@ -1,9 +1,6 @@
 package tests;
 
-import domain.AssignStmt;
-import domain.ConstantExpression;
-import domain.PrgState;
-import domain.Statement;
+import domain.*;
 import junit.framework.TestCase;
 import repo.Repository;
 import repo.RepositoryImpl;
@@ -18,7 +15,9 @@ public class RepositoryImplTest extends TestCase {
     OutputImpl<Integer> output = new OutputImpl<>();
     FileTableImpl<Integer,FileData> fl = new FileTableImpl<>();
     HeapImpl<Integer,Integer> heap = new HeapImpl<>();
-    PrgState prgState = new PrgState(execStack,symbolTable,output,new AssignStmt(new ConstantExpression(2),"aa"),fl,heap);
+    ProcTable<String,ProcData> pt = new ProcTableImpl<>();
+
+    PrgState prgState = new PrgState(execStack,symbolTable,output,new AssignStmt(new ConstantExpression(2),"aa"),fl,heap,pt);
     RepositoryImpl repository = new RepositoryImpl();
     public void setUp() throws Exception {
         super.setUp();

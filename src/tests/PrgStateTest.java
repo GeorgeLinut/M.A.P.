@@ -1,9 +1,6 @@
 package tests;
 
-import domain.AssignStmt;
-import domain.ConstantExpression;
-import domain.PrgState;
-import domain.Statement;
+import domain.*;
 import junit.framework.TestCase;
 import utils.*;
 
@@ -17,7 +14,9 @@ public class PrgStateTest extends TestCase {
     Statement st1= new AssignStmt(new ConstantExpression(2),"aa");
     FileTableImpl<Integer, FileData> fl = new FileTableImpl<>();
     HeapImpl<Integer,Integer> heap = new HeapImpl<>();
-    PrgState prgState = new PrgState(execStack,symbolTable,output,st1,fl,heap);
+    ProcTable<String,ProcData> pt = new ProcTableImpl<>();
+
+    PrgState prgState = new PrgState(execStack,symbolTable,output,st1,fl,heap,pt);
     public void setUp() throws Exception {
         super.setUp();
 

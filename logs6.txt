@@ -182,3 +182,95 @@ Output
 Heap
 4-->20
 5-->30
+ExecStack
+CompStmt{first=NewStmt{variable='v', address=4, expression=ConstantExpression{value=20}}, second=CompStmt{first=NewStmt{variable='a', address=5, expression=ConstantExpression{value=22}}, second=CompStmt{first=WriteHeapStmt{varName='a', expression=ConstantExpression{value=30}}, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=ReadHeapExpression{variable='a'}} ), second=print( ReadHeapExpression{variable='a'} )}}}}
+AssignStmt{expr=ConstantExpression{value=10}, var='v'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=NewStmt{variable='v', address=4, expression=ConstantExpression{value=20}}, second=CompStmt{first=NewStmt{variable='a', address=5, expression=ConstantExpression{value=22}}, second=CompStmt{first=WriteHeapStmt{varName='a', expression=ConstantExpression{value=30}}, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=ReadHeapExpression{variable='a'}} ), second=print( ReadHeapExpression{variable='a'} )}}}}
+SymbolTable
+v-->10
+Output
+Heap
+ExecStack
+CompStmt{first=NewStmt{variable='a', address=5, expression=ConstantExpression{value=22}}, second=CompStmt{first=WriteHeapStmt{varName='a', expression=ConstantExpression{value=30}}, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=ReadHeapExpression{variable='a'}} ), second=print( ReadHeapExpression{variable='a'} )}}}
+NewStmt{variable='v', address=4, expression=ConstantExpression{value=20}}
+SymbolTable
+v-->10
+Output
+Heap
+ExecStack
+CompStmt{first=NewStmt{variable='a', address=5, expression=ConstantExpression{value=22}}, second=CompStmt{first=WriteHeapStmt{varName='a', expression=ConstantExpression{value=30}}, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=ReadHeapExpression{variable='a'}} ), second=print( ReadHeapExpression{variable='a'} )}}}
+SymbolTable
+v-->4
+Output
+Heap
+4-->20
+ExecStack
+CompStmt{first=WriteHeapStmt{varName='a', expression=ConstantExpression{value=30}}, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=ReadHeapExpression{variable='a'}} ), second=print( ReadHeapExpression{variable='a'} )}}
+NewStmt{variable='a', address=5, expression=ConstantExpression{value=22}}
+SymbolTable
+v-->4
+Output
+Heap
+4-->20
+ExecStack
+CompStmt{first=WriteHeapStmt{varName='a', expression=ConstantExpression{value=30}}, second=CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=ReadHeapExpression{variable='a'}} ), second=print( ReadHeapExpression{variable='a'} )}}
+SymbolTable
+a-->5
+v-->4
+Output
+Heap
+4-->20
+5-->22
+ExecStack
+CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=ReadHeapExpression{variable='a'}} ), second=print( ReadHeapExpression{variable='a'} )}
+WriteHeapStmt{varName='a', expression=ConstantExpression{value=30}}
+SymbolTable
+a-->5
+v-->4
+Output
+Heap
+4-->20
+5-->22
+ExecStack
+CompStmt{first=print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=ReadHeapExpression{variable='a'}} ), second=print( ReadHeapExpression{variable='a'} )}
+SymbolTable
+a-->5
+v-->4
+Output
+Heap
+4-->20
+5-->30
+ExecStack
+print( ReadHeapExpression{variable='a'} )
+print( ArithmeticExpression{operand1=ConstantExpression{value=100}, operator=+, operand2=ReadHeapExpression{variable='a'}} )
+SymbolTable
+a-->5
+v-->4
+Output
+Heap
+4-->20
+5-->30
+ExecStack
+print( ReadHeapExpression{variable='a'} )
+SymbolTable
+a-->5
+v-->4
+Output
+130
+Heap
+4-->20
+5-->30
+ExecStack
+SymbolTable
+a-->5
+v-->4
+Output
+130
+30
+Heap
+4-->20
+5-->30

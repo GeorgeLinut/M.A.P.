@@ -2,6 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a19948e-24f5-4773-b232-1a35bba4a475" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/domain/ProcTable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/domain/ProcTableImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils/ProcData.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/concurent1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/concurent15.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/concurent16.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/concurent20.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/concurent21.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/concurent8.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab2/com/company/Main.class" afterPath="$PROJECT_DIR$/out/production/lab2/com/company/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab2/domain/ForkStmt.class" afterPath="$PROJECT_DIR$/out/production/lab2/domain/ForkStmt.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab2/domain/PrgState.class" afterPath="$PROJECT_DIR$/out/production/lab2/domain/PrgState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab2/tests/AssignStmtTest.class" afterPath="$PROJECT_DIR$/out/production/lab2/tests/AssignStmtTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab2/tests/CompStmtTest.class" afterPath="$PROJECT_DIR$/out/production/lab2/tests/CompStmtTest.class" />
@@ -10,9 +21,22 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab2/tests/PrgStateTest.class" afterPath="$PROJECT_DIR$/out/production/lab2/tests/PrgStateTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab2/tests/PrintStmtTest.class" afterPath="$PROJECT_DIR$/out/production/lab2/tests/PrintStmtTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab2/tests/RepositoryImplTest.class" afterPath="$PROJECT_DIR$/out/production/lab2/tests/RepositoryImplTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab2/userInterface/SubordinateController.class" afterPath="$PROJECT_DIR$/out/production/lab2/userInterface/SubordinateController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a.txt" afterPath="$PROJECT_DIR$/a.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/concurent10.txt" afterPath="$PROJECT_DIR$/concurent10.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/concurent11.txt" afterPath="$PROJECT_DIR$/concurent11.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs1.txt" afterPath="$PROJECT_DIR$/logs1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs10.txt" afterPath="$PROJECT_DIR$/logs10.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs11.txt" afterPath="$PROJECT_DIR$/logs11.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs2.txt" afterPath="$PROJECT_DIR$/logs2.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs3.txt" afterPath="$PROJECT_DIR$/logs3.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs4.txt" afterPath="$PROJECT_DIR$/logs4.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs5.txt" afterPath="$PROJECT_DIR$/logs5.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs6.txt" afterPath="$PROJECT_DIR$/logs6.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs7.txt" afterPath="$PROJECT_DIR$/logs7.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Main.java" afterPath="$PROJECT_DIR$/src/com/company/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/domain/ForkStmt.java" afterPath="$PROJECT_DIR$/src/domain/ForkStmt.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/domain/PrgState.java" afterPath="$PROJECT_DIR$/src/domain/PrgState.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tests/AssignStmtTest.java" afterPath="$PROJECT_DIR$/src/tests/AssignStmtTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tests/CompStmtTest.java" afterPath="$PROJECT_DIR$/src/tests/CompStmtTest.java" />
@@ -21,6 +45,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tests/PrgStateTest.java" afterPath="$PROJECT_DIR$/src/tests/PrgStateTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tests/PrintStmtTest.java" afterPath="$PROJECT_DIR$/src/tests/PrintStmtTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tests/RepositoryImplTest.java" afterPath="$PROJECT_DIR$/src/tests/RepositoryImplTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/userInterface/SubordinateController.java" afterPath="$PROJECT_DIR$/src/userInterface/SubordinateController.java" />
     </list>
     <ignored path="lab2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,11 +67,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <file leaf-file-name="ForkStmt.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/domain/ForkStmt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="121" column="43" selection-start-line="121" selection-start-column="43" selection-end-line="121" selection-end-column="43" />
+            <state relative-caret-position="371">
+              <caret line="22" column="138" selection-start-line="22" selection-start-column="138" selection-end-line="22" selection-end-column="138" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrintStmtTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tests/PrintStmtTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="21" column="123" selection-start-line="21" selection-start-column="123" selection-end-line="21" selection-end-column="123" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AssignStmtTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tests/AssignStmtTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="21" column="123" selection-start-line="21" selection-start-column="123" selection-end-line="21" selection-end-column="123" />
               <folding />
             </state>
           </provider>
@@ -55,19 +102,78 @@
       <file leaf-file-name="PrgState.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/domain/PrgState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+            <state relative-caret-position="437">
+              <caret line="142" column="39" selection-start-line="142" selection-start-column="39" selection-end-line="142" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConstantExpression.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domain/ConstantExpression.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="674">
+              <caret line="199" column="34" selection-start-line="199" selection-start-column="34" selection-end-line="199" selection-end-column="34" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SymbolTableImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/SymbolTableImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="61" column="3" selection-start-line="61" selection-start-column="3" selection-end-line="69" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProcTableImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/domain/ProcTableImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="337">
+              <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#738#739#0" expanded="true" />
+                <element signature="e#793#794#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ControllerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tests/ControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="24" column="80" selection-start-line="24" selection-start-column="80" selection-end-line="24" selection-end-column="80" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExecStackImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/ExecStackImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding>
+                <element signature="e#365#366#0" expanded="true" />
+                <element signature="e#397#398#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubordinateController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/userInterface/SubordinateController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="251" column="38" selection-start-line="251" selection-start-column="38" selection-end-line="251" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,10 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/view/RunConcurentExampleCommand.java" />
-        <option value="$PROJECT_DIR$/src/view/RunConcurrentExampleCommand.java" />
-        <option value="$PROJECT_DIR$/src/domain/BooleanExpression.java" />
-        <option value="$PROJECT_DIR$/src/domain/ForkStmt.java" />
         <option value="$PROJECT_DIR$/src/domain/ReadHeapExpression.java" />
         <option value="$PROJECT_DIR$/src/domain/AssignStmt.java" />
         <option value="$PROJECT_DIR$/src/domain/CloseRStmt.java" />
@@ -121,7 +223,6 @@
         <option value="$PROJECT_DIR$/src/userInterface/userInteface.fxml" />
         <option value="$PROJECT_DIR$/src/domain/ProgramCapsule.java" />
         <option value="$PROJECT_DIR$/src/utils/Pair.java" />
-        <option value="$PROJECT_DIR$/src/userInterface/SubordinateController.java" />
         <option value="$PROJECT_DIR$/src/utils/EntryIdentifier.java" />
         <option value="$PROJECT_DIR$/src/utils/ExecStack.java" />
         <option value="$PROJECT_DIR$/src/utils/ExecStackImpl.java" />
@@ -135,16 +236,21 @@
         <option value="$PROJECT_DIR$/src/utils/Output.java" />
         <option value="$PROJECT_DIR$/src/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/userInterface/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/domain/ConstantExpression.java" />
-        <option value="$PROJECT_DIR$/src/domain/PrgState.java" />
+        <option value="$PROJECT_DIR$/src/utils/ProcData.java" />
+        <option value="$PROJECT_DIR$/src/domain/ProcTable.java" />
         <option value="$PROJECT_DIR$/src/tests/CompStmtTest.java" />
-        <option value="$PROJECT_DIR$/src/tests/AssignStmtTest.java" />
-        <option value="$PROJECT_DIR$/src/tests/ControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/tests/PrgStateTest.java" />
-        <option value="$PROJECT_DIR$/src/tests/RepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/tests/PrintStmtTest.java" />
         <option value="$PROJECT_DIR$/src/tests/IfStmtTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/RepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/PrgStateTest.java" />
+        <option value="$PROJECT_DIR$/src/domain/ForkStmt.java" />
+        <option value="$PROJECT_DIR$/src/tests/PrintStmtTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/AssignStmtTest.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/tests/ControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/userInterface/SubordinateController.java" />
+        <option value="$PROJECT_DIR$/src/domain/ProcTableImpl.java" />
+        <option value="$PROJECT_DIR$/src/domain/PrgState.java" />
       </list>
     </option>
   </component>
@@ -321,7 +427,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="Const&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/domain/ConstantExpression.java&#10;Ou&#9;PSI&#9;JAVA://utils.Output&#10;File&#9;PSI&#9;JAVA://utils.FileTableImpl&#10;Fi&#9;PSI&#9;JAVA://utils.FileTable&#10;Sym&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/utils/SymbolTableImpl.java&#10;Sy&#9;PSI&#9;JAVA://utils.SymbolTable&#10;Hea&#9;PSI&#9;JAVA://utils.HeapImpl&#10;He&#9;PSI&#9;JAVA://utils.Heap&#10;Exe&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/utils/ExecStackImpl.java&#10;exe&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/utils/ExecStack.java&#10;Prg&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/domain/PrgState.java&#10;pro&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/domain/ProgramCapsule.java&#10;out&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/utils/OutputImpl.java&#10;cont&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/controller/Controller.java&#10;pr&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/domain/PrgState.java&#10;tex&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/view/TextMenu.java&#10;ma&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/com/company/Main.java" />
+    <property name="SearchEverywhereHistoryKey" value="File&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/utils/FileTableImpl.java&#10;Pro&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/utils/ProcData.java&#10;Filed&#9;PSI&#9;JAVA://utils.FileData&#10;Sy&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/utils/SymbolTableImpl.java&#10;Const&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/domain/ConstantExpression.java&#10;Ou&#9;PSI&#9;JAVA://utils.Output&#10;Fi&#9;PSI&#9;JAVA://utils.FileTable&#10;Sym&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/utils/SymbolTableImpl.java&#10;Hea&#9;PSI&#9;JAVA://utils.HeapImpl&#10;He&#9;PSI&#9;JAVA://utils.Heap&#10;Exe&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/utils/ExecStackImpl.java&#10;exe&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/utils/ExecStack.java&#10;Prg&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/domain/PrgState.java&#10;pro&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/domain/ProgramCapsule.java&#10;out&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/utils/OutputImpl.java&#10;cont&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/controller/Controller.java&#10;pr&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/domain/PrgState.java&#10;tex&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/view/TextMenu.java&#10;ma&#9;FILE&#9;file://C:/Users/glinut/Documents/Map/lab2/src/com/company/Main.java" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
   </component>
   <component name="RecentsManager">
@@ -816,7 +922,7 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32588235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31176472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -824,8 +930,9 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24705882" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282353" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23361976" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34941176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13426423" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -834,7 +941,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34941176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -895,12 +1001,6 @@
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/domain/ForkStmt.java</url>
-          <line>16</line>
-          <properties />
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/domain/OpenRFileStmt.java</url>
           <line>33</line>
           <properties />
@@ -912,34 +1012,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/view/TextMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/WriteHeapStmt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/ReadHeapExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/PrintStmt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/exceptions/InputDataException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -959,14 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/ForkStmt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1130,17 +1194,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/userInterface/SubordinateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="e#13254#13255#0" expanded="false" />
-            <element signature="e#13287#13288#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/EntryIdentifier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -1152,18 +1205,6 @@
             <element signature="e#291#292#0" expanded="false" />
             <element signature="e#336#337#0" expanded="false" />
             <element signature="e#393#394#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/ExecStackImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#712#713#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1189,51 +1230,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/SymbolTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/SymbolTableImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="e#1209#1210#0" expanded="true" />
-            <element signature="e#1259#1260#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/FileTableImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#654#655#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/Heap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/FileTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1264,7 +1265,7 @@
         <state relative-caret-position="22">
           <caret line="77" column="35" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1285,74 +1286,187 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/AssignStmtTest.java">
+    <entry file="file://$PROJECT_DIR$/src/utils/SymbolTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        <state relative-caret-position="308">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/FileData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/ProcData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/FileTableImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#654#655#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/ProcTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tests/CompStmtTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/ControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/PrgStateTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/RepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/PrintStmtTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+        <state relative-caret-position="180">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tests/IfStmtTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+        <state relative-caret-position="217">
+          <caret line="20" column="123" selection-start-line="20" selection-start-column="123" selection-end-line="20" selection-end-column="123" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/RepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="19" column="123" selection-start-line="19" selection-start-column="123" selection-end-line="19" selection-end-column="123" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/PrgStateTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="18" column="80" selection-start-line="18" selection-start-column="80" selection-end-line="18" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/ForkStmt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="22" column="138" selection-start-line="22" selection-start-column="138" selection-end-line="22" selection-end-column="138" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/PrintStmtTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="21" column="123" selection-start-line="21" selection-start-column="123" selection-end-line="21" selection-end-column="123" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="121" column="43" selection-start-line="121" selection-start-column="43" selection-end-line="121" selection-end-column="43" />
+        <state relative-caret-position="674">
+          <caret line="199" column="34" selection-start-line="199" selection-start-column="34" selection-end-line="199" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/ControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="24" column="80" selection-start-line="24" selection-start-column="80" selection-end-line="24" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userInterface/SubordinateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="251" column="38" selection-start-line="251" selection-start-column="38" selection-end-line="251" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/AssignStmtTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="21" column="123" selection-start-line="21" selection-start-column="123" selection-end-line="21" selection-end-column="123" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/ExecStackImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/SymbolTableImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="61" column="3" selection-start-line="61" selection-start-column="3" selection-end-line="69" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/FileTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/ProcTableImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/PrgState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        <state relative-caret-position="437">
+          <caret line="142" column="39" selection-start-line="142" selection-start-column="39" selection-end-line="142" selection-end-column="39" />
           <folding />
         </state>
       </provider>

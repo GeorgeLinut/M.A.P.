@@ -72,11 +72,14 @@ public class SubordinateController {
         Controller controller1 = new Controller(repo1);
         ExecStackImpl<Statement> execStack1 = new ExecStackImpl<>();
         SymbolTableImpl<String,Integer> symbolTable1= new SymbolTableImpl<>();
-        HeapImpl<Integer,Integer> heap1=new HeapImpl<>();
+        HeapImpl<Integer,Integer>heap1=new HeapImpl<>();
         OutputImpl<Integer> output1 = new OutputImpl<>();
-        FileTable<Integer, FileData> fileTable1 = new FileTableImpl<>();
-        PrgState state1 = new PrgState(execStack1,symbolTable1,output1,st1,fileTable1,heap1);
+        FileTable<Integer,FileData> fileTable1 = new FileTableImpl<>();
+        ProcTable<String,ProcData> pt = new ProcTableImpl<>();
+
+        PrgState state1 = new PrgState(execStack1,symbolTable1,output1,st1,fileTable1,heap1,pt);
         repo1.addPrg(state1);
+
 
         Statement st2= new CompStmt(
                 new AssignStmt(new ArithmeticExpression('-', new ConstantExpression(2),new ConstantExpression(2)),"a"),
@@ -91,8 +94,12 @@ public class SubordinateController {
         HeapImpl<Integer,Integer>heap2=new HeapImpl<>();
         OutputImpl<Integer> output2 = new OutputImpl<>();
         FileTable<Integer,FileData> fileTable2 = new FileTableImpl<>();
-        PrgState state2 = new PrgState(execStack2,symbolTable2,output2,st2,fileTable2,heap2);
+        ProcTable<String,ProcData> pt2 = new ProcTableImpl<>();
+
+        PrgState state2 = new PrgState(execStack2,symbolTable2,output2,st2,fileTable2,heap2,pt2);
         repo2.addPrg(state2);
+//        UI ui = new UI(controller2);
+//        ui.run();
 
         Statement st3 = new CompStmt(new OpenRFileStmt("test.txt","file"),
                 new CompStmt(new ReadRFileStmt("file","a"),
@@ -108,7 +115,9 @@ public class SubordinateController {
         HeapImpl<Integer,Integer>heap3=new HeapImpl<>();
         OutputImpl<Integer> output3 = new OutputImpl<>();
         FileTable<Integer,FileData> fileTable3 = new FileTableImpl<>();
-        PrgState state3 = new PrgState(execStack3,symbolTable3,output3,st3,fileTable3,heap3);
+        ProcTable<String,ProcData> pt3 = new ProcTableImpl<>();
+
+        PrgState state3 = new PrgState(execStack3,symbolTable3,output3,st3,fileTable3,heap3,pt3);
         repo3.addPrg(state3);
 
         Statement st4= new CompStmt(new AssignStmt(new ConstantExpression(10),"v"),
@@ -121,7 +130,9 @@ public class SubordinateController {
         HeapImpl<Integer,Integer>heap4=new HeapImpl<>();
         OutputImpl<Integer> output4 = new OutputImpl<>();
         FileTable<Integer,FileData> fileTable4 = new FileTableImpl<>();
-        PrgState state4 = new PrgState(execStack4,symbolTable4,output4,st4,fileTable4,heap4);
+        ProcTable<String,ProcData> pt4 = new ProcTableImpl<>();
+
+        PrgState state4 = new PrgState(execStack4,symbolTable4,output4,st4,fileTable4,heap4,pt4);
         repo4.addPrg(state4);
 
         Statement st5 = new CompStmt(new AssignStmt(new ConstantExpression(10),"v"),
@@ -137,7 +148,9 @@ public class SubordinateController {
         HeapImpl<Integer,Integer>heap5=new HeapImpl<>();
         OutputImpl<Integer> output5 = new OutputImpl<>();
         FileTable<Integer,FileData> fileTable5 = new FileTableImpl<>();
-        PrgState state5 = new PrgState(execStack5,symbolTable5,output5,st5,fileTable5,heap5);
+        ProcTable<String,ProcData> pt5 = new ProcTableImpl<>();
+
+        PrgState state5 = new PrgState(execStack5,symbolTable5,output5,st5,fileTable5,heap5,pt5);
         repo5.addPrg(state5);
 
         Statement st6 = new CompStmt(new AssignStmt(new ConstantExpression(10),"v"),
@@ -154,7 +167,9 @@ public class SubordinateController {
         HeapImpl<Integer,Integer>heap6=new HeapImpl<>();
         OutputImpl<Integer> output6 = new OutputImpl<>();
         FileTable<Integer,FileData> fileTable6 = new FileTableImpl<>();
-        PrgState state6 = new PrgState(execStack6,symbolTable6,output6,st6,fileTable6,heap6);
+        ProcTable<String,ProcData> pt6 = new ProcTableImpl<>();
+
+        PrgState state6 = new PrgState(execStack6,symbolTable6,output6,st6,fileTable6,heap6,pt6);
         repo6.addPrg(state6);
 
         Statement st7 = new CompStmt(new AssignStmt(new ConstantExpression(10),"v"),
@@ -171,7 +186,9 @@ public class SubordinateController {
         HeapImpl<Integer,Integer>heap7=new HeapImpl<>();
         OutputImpl<Integer> output7 = new OutputImpl<>();
         FileTable<Integer,FileData> fileTable7 = new FileTableImpl<>();
-        PrgState state7 = new PrgState(execStack7,symbolTable7,output7,st7,fileTable7,heap7);
+        ProcTable<String,ProcData> pt7 = new ProcTableImpl<>();
+
+        PrgState state7 = new PrgState(execStack7,symbolTable7,output7,st7,fileTable7,heap7,pt7);
         repo7.addPrg(state7);
 
         Repository repo9= new RepositoryImpl("logs9.txt");
@@ -190,7 +207,9 @@ public class SubordinateController {
         HeapImpl<Integer,Integer>heap10=new HeapImpl<>();
         OutputImpl<Integer> output10 = new OutputImpl<>();
         FileTable<Integer,FileData> fileTable10 = new FileTableImpl<>();
-        PrgState state10 = new PrgState(execStack10,symbolTable10,output10,st10,fileTable10,heap10);
+        ProcTable<String,ProcData> pt10 = new ProcTableImpl<>();
+
+        PrgState state10 = new PrgState(execStack10,symbolTable10,output10,st10,fileTable10,heap10,pt10);
         repo10.addPrg(state10);
 
         Statement st11= new CompStmt(
@@ -206,7 +225,9 @@ public class SubordinateController {
         HeapImpl<Integer,Integer>heap11=new HeapImpl<>();
         OutputImpl<Integer> output11 = new OutputImpl<>();
         FileTable<Integer,FileData> fileTable11 = new FileTableImpl<>();
-        PrgState state11 = new PrgState(execStack11,symbolTable11,output11,st11,fileTable11,heap11);
+        ProcTable<String,ProcData> pt11 = new ProcTableImpl<>();
+
+        PrgState state11 = new PrgState(execStack11,symbolTable11,output11,st11,fileTable11,heap11,pt11);
         repo11.addPrg(state11);
 
         Statement st12 = new CompStmt(new AssignStmt(new ConstantExpression(10),"v"),
@@ -228,7 +249,9 @@ public class SubordinateController {
         HeapImpl<Integer,Integer>heap12=new HeapImpl<>();
         OutputImpl<Integer> output12 = new OutputImpl<>();
         FileTable<Integer,FileData> fileTable12 = new FileTableImpl<>();
-        PrgState state12 = new PrgState(execStack12,symbolTable12,output12,st112,fileTable12,heap12);
+        ProcTable<String,ProcData> pt12 = new ProcTableImpl<>();
+
+        PrgState state12 = new PrgState(execStack12,symbolTable12,output12,st112,fileTable12,heap12,pt12);
         repo12.addPrg(state12);
 
         programs = new ArrayList<>();

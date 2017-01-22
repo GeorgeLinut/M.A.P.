@@ -19,16 +19,47 @@ public class PrgState implements Serializable {
     private Statement prg;
     private FileTable<Integer,FileData> ft;
     private  Heap<Integer,Integer>heap;
+    private ProcTable<String,ProcData>procTable;
 
-    public PrgState(ExecStack<Statement> execStack, SymbolTable<String, Integer> st, Output<Integer> out, Statement prg, FileTable<Integer, FileData> ft, Heap<Integer, Integer> heap) {
+
+    public PrgState(ExecStack<Statement> execStack, SymbolTable<String, Integer> st, Output<Integer> out, Statement prg, FileTable<Integer, FileData> ft, Heap<Integer, Integer> heap,ProcTable<String,ProcData>procTable) {
         id = PrgStateIdGenerator.generate();
         this.execStack = execStack;
+        this.symbolTables = new Stack<>();
         this.st = st;
+        this.symbolTables.push(st);
         this.out = out;
         this.prg = prg;
         this.ft = ft;
         this.heap = heap;
+        this.procTable =procTable;
         execStack.push(prg);
+    }
+
+    public void pushSymbolTable(SymbolTable<String,Integer> symbolTable){
+        this.symbolTables.push(symbolTable);
+        this.st = symbolTable;
+    }
+
+    public Stack<SymbolTable<String,Integer>> cloneStStack(){
+
+            Stack<SymbolTable<String,Integer>> newStackp = new Stack<>();
+            for (SymbolTable<String,Integer> sut:symbolTables){
+                SymbolTable<String,Integer> newSt = sut.clone();
+                newStackp.push(newSt);
+            }
+            return newStackp;
+
+    }
+
+    public void setSymbolTables(Stack<SymbolTable<String, Integer>> symbolTables) {
+        this.symbolTables = symbolTables;
+    }
+
+    public SymbolTable<String,Integer> popSymbolTable(){
+        SymbolTable<String,Integer>old= this.symbolTables.pop();
+        this.st = this.symbolTables.peek();
+        return old;
     }
 
     public Integer getId() {
@@ -60,7 +91,7 @@ public class PrgState implements Serializable {
     }
 
     public SymbolTable<String, Integer> getSt() {
-        return st;
+        return this.symbolTables.peek();
     }
 
     public void setSt(SymbolTable<String, Integer> st) {
@@ -108,6 +139,9 @@ public class PrgState implements Serializable {
         buffer.append("\n");
         buffer.append("Output:\n");
         buffer.append(out.toString());
+        buffer.append("\n");
+        buffer.append("Proc Table:\n");
+        buffer.append(st.toString());
         buffer.append("\n");
         return buffer.toString();
     }
