@@ -2,6 +2,8 @@ package userInterface;
 
 import controller.Controller;
 import domain.*;
+import domain.expressions.*;
+import domain.statements.*;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -67,7 +69,20 @@ public class SubordinateController {
     }
 
     private void initExamples(){
-        Statement st1= new CompStmt(new AssignStmt(new ConstantExpression(5),"a"),new PrintStmt(new VarExpression("a")));
+        Statement st1= new CompStmt(
+                new AssignStmt(new ArithmeticExpression('+',new VarExpression("a"),new VarExpression("b")),"v"),
+                new PrintStmt(new VarExpression("v"))
+        );
+        ArrayList<Expression> e1 = new ArrayList<>();
+        e1.add(new ArithmeticExpression('*',new ConstantExpression(10),new VarExpression("v")));
+        e1.add(new VarExpression("w"));
+        ArrayList<Expression> e2 = new ArrayList<>();
+        e2.add(new VarExpression("v"));
+        e2.add(new VarExpression("w"));
+        Statement st100 = new CompStmt(
+                new AssignStmt(new ArithmeticExpression('*',new VarExpression("a"),new VarExpression("b")),"v"),
+                new PrintStmt(new VarExpression("v"))
+        );
         Repository repo1= new RepositoryImpl("logs1.txt");
         Controller controller1 = new Controller(repo1);
         ExecStackImpl<Statement> execStack1 = new ExecStackImpl<>();
@@ -76,8 +91,32 @@ public class SubordinateController {
         OutputImpl<Integer> output1 = new OutputImpl<>();
         FileTable<Integer,FileData> fileTable1 = new FileTableImpl<>();
         ProcTable<String,ProcData> pt = new ProcTableImpl<>();
-
-        PrgState state1 = new PrgState(execStack1,symbolTable1,output1,st1,fileTable1,heap1,pt);
+        String s ="sum";
+        String s1 ="product";
+        ArrayList<String> vars = new ArrayList<>();
+        vars.add("a");
+        vars.add("b");
+        ProcData procData = new ProcData(st1,vars);
+        ProcData procData1 = new ProcData(st100,vars);
+        pt.add(s,procData);
+        Statement finalSt = new CompStmt(
+                new AssignStmt(new ConstantExpression(2),"v"),
+                new CompStmt(
+                        new AssignStmt(new ConstantExpression(5),"w"),
+                        new CompStmt(
+                                new CallStmt(e1,"sum"),
+                                new CompStmt(
+                                        new PrintStmt(new VarExpression("v")),
+                                        new CompStmt(
+                                                new ForkStmt(new CallStmt(e2,"product")),
+                                                new ForkStmt(new CallStmt(e2,"sum"))
+                                        )
+                                )
+                        )
+                )
+        );
+        pt.add(s1,procData1);
+        PrgState state1 = new PrgState(execStack1,symbolTable1,output1,finalSt,fileTable1,heap1,pt);
         repo1.addPrg(state1);
 
 
@@ -254,6 +293,42 @@ public class SubordinateController {
         PrgState state12 = new PrgState(execStack12,symbolTable12,output12,st112,fileTable12,heap12,pt12);
         repo12.addPrg(state12);
 
+        Statement stt13 = new CompStmt(
+                new AssignStmt(new ConstantExpression(0),"v"),
+                new CompStmt(
+                        new WhileStmt(new BooleanExpression("<",new VarExpression("v"),new ConstantExpression(3)),
+                                new CompStmt(
+                                        new ForkStmt(new CompStmt(
+                                        new PrintStmt(new VarExpression("v")),
+                                        new AssignStmt(new ArithmeticExpression('+',new VarExpression("v"),new ConstantExpression(1)),
+                                                "v")
+                                )),new CompStmt(
+                                        new PrintStmt(new VarExpression("v")),
+                                        new AssignStmt(new ArithmeticExpression('+',new VarExpression("v"),new ConstantExpression(1)),
+                                                "v")))),
+                                new CompStmt(
+                                        new SleepStmt(5),
+                                        new PrintStmt(new ArithmeticExpression('*',new VarExpression("v"),new ConstantExpression(10)))
+
+                                )
+                )
+        );
+
+
+
+        Repository repo13 = new RepositoryImpl("logs13.txt");
+        Controller controller13 = new Controller(repo13);
+        ExecStackImpl<Statement> execStack13 = new ExecStackImpl<>();
+        SymbolTableImpl<String,Integer> symt13 = new SymbolTableImpl<>();
+        HeapImpl<Integer,Integer> heap13 = new HeapImpl<>();
+        OutputImpl<Integer> output13 = new OutputImpl<>();
+        FileTable<Integer,FileData> fileT13 = new FileTableImpl<>();
+        ProcTable<String,ProcData> pro13 = new ProcTableImpl<>();
+
+        PrgState state13 = new PrgState(execStack13,symt13,output13,stt13,fileT13,heap13,pro13);
+        repo13.addPrg(state13);
+
+
         programs = new ArrayList<>();
 
         programs.add(new ProgramCapsule(1,controller1,state1));
@@ -266,6 +341,7 @@ public class SubordinateController {
         programs.add(new ProgramCapsule(10,controller10,state10));
         programs.add(new ProgramCapsule(11,controller11,state11));
         programs.add(new ProgramCapsule(12,controller12,state12));
+        programs.add(new ProgramCapsule(13,controller13,state13));
 
 
 

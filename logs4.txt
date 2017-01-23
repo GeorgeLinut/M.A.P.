@@ -1,18 +1,18 @@
 ExecStack
-CompStmt{first=domain.NewStmt@1540e19d, second=print( VarExpression{name='v'} )}
+CompStmt{first=domain.statements.NewStmt@1540e19d, second=print( VarExpression{name='v'} )}
 AssignStmt{expr=ConstantExpression{value=10}, var='v'}
 SymbolTable
 Output
 Heap
 ExecStack
-CompStmt{first=domain.NewStmt@1540e19d, second=print( VarExpression{name='v'} )}
+CompStmt{first=domain.statements.NewStmt@1540e19d, second=print( VarExpression{name='v'} )}
 SymbolTable
 v-->10
 Output
 Heap
 ExecStack
 print( VarExpression{name='v'} )
-domain.NewStmt@1540e19d
+domain.statements.NewStmt@1540e19d
 SymbolTable
 v-->10
 Output
@@ -30,20 +30,20 @@ Output
 20
 Heap
 ExecStack
-CompStmt{first=domain.NewStmt@1540e19d, second=print( VarExpression{name='v'} )}
+CompStmt{first=domain.statements.NewStmt@1540e19d, second=print( VarExpression{name='v'} )}
 AssignStmt{expr=ConstantExpression{value=10}, var='v'}
 SymbolTable
 Output
 Heap
 ExecStack
-CompStmt{first=domain.NewStmt@1540e19d, second=print( VarExpression{name='v'} )}
+CompStmt{first=domain.statements.NewStmt@1540e19d, second=print( VarExpression{name='v'} )}
 SymbolTable
 v-->10
 Output
 Heap
 ExecStack
 print( VarExpression{name='v'} )
-domain.NewStmt@1540e19d
+domain.statements.NewStmt@1540e19d
 SymbolTable
 v-->10
 Output
@@ -63,20 +63,20 @@ Output
 Heap
 1-->20
 ExecStack
-CompStmt{first=domain.NewStmt@1540e19d, second=print( VarExpression{name='v'} )}
+CompStmt{first=domain.statements.NewStmt@1540e19d, second=print( VarExpression{name='v'} )}
 AssignStmt{expr=ConstantExpression{value=10}, var='v'}
 SymbolTable
 Output
 Heap
 ExecStack
-CompStmt{first=domain.NewStmt@1540e19d, second=print( VarExpression{name='v'} )}
+CompStmt{first=domain.statements.NewStmt@1540e19d, second=print( VarExpression{name='v'} )}
 SymbolTable
 v-->10
 Output
 Heap
 ExecStack
 print( VarExpression{name='v'} )
-domain.NewStmt@1540e19d
+domain.statements.NewStmt@1540e19d
 SymbolTable
 v-->10
 Output

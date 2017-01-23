@@ -2,11 +2,13 @@ package tests;
 
 import controller.Controller;
 import domain.*;
+import domain.expressions.ConstantExpression;
+import domain.statements.CompStmt;
+import domain.statements.PrintStmt;
+import domain.statements.Statement;
 import junit.framework.TestCase;
 import repo.RepositoryImpl;
 import utils.*;
-
-import java.util.ArrayList;
 
 /**
  * Created by glinut on 11/8/2016.

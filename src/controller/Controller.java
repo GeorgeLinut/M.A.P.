@@ -1,18 +1,18 @@
 package controller;
 
 import domain.PrgState;
-import domain.Statement;
+import domain.statements.Statement;
 import javafx.scene.control.Alert;
 import repo.Repository;
 import utils.*;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.Serializable;
 import java.io.UnsupportedEncodingException;
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * Created by glinut on 11/4/2016.
@@ -96,6 +96,78 @@ public class Controller implements Serializable {
                 .collect(Collectors.toList());
     }
 
+    public void oneStepForAllPrograms(List<PrgState> programList) throws Exception{
+
+        programList.forEach(prg -> {
+                    try {
+                        repo.logPrgStateExec(prg);
+                    }
+                    catch (IOException ioe){
+                        System.out.println(ioe.getMessage());
+                    }
+                }
+        );
+        List<Callable<PrgState>> callableList;
+
+        try {
+            callableList = programList.stream()
+                    .map((PrgState p) -> (Callable<PrgState>) (() -> {
+                        return p.oneStep();
+                    }))
+                    .collect(Collectors.toList());
+        }
+        catch (Exception e){
+            System.out.println("Exception caught");
+            throw new Exception(e.getMessage());
+        }
+        List<PrgState> newProgramStates=null;
+        try{
+            newProgramStates = executorService.invokeAll(callableList)
+                    .stream()
+                    .map(future -> {
+                        try{
+                            return future.get();
+                        }
+                        catch (InterruptedException ie){
+                            ie.printStackTrace();
+                            return null;
+                        }
+                        catch (ExecutionException ee){
+                            ee.printStackTrace();
+                            return null;
+                        }
+                        catch (Exception e){
+                            System.out.println("Program finished");
+                            return null;
+                        }
+                    })
+                    .filter(p -> p!= null)
+                    .collect(Collectors.toList());
+        }
+        catch (InterruptedException ie){
+            ie.printStackTrace();
+        }
+        catch (Exception e){
+            System.out.println("Exception caught");
+        }
+
+        //showList(programList);
+        //showList(newProgramStates);
+        //System.out.println("another one step\n");
+
+        programList.addAll(newProgramStates);
+        programList.forEach(prg ->{
+            try{
+                repo.logPrgStateExec(prg);
+            }
+            catch (IOException ioe){
+                ioe.printStackTrace();
+            }
+        });
+
+        repo.setAll((ArrayList<PrgState>)programList);
+    }
+
     public void oneStepAllPrg(List<PrgState> l) throws InterruptedException {
         l.forEach(p -> {
             try {
@@ -131,7 +203,11 @@ public class Controller implements Serializable {
             if (prgStates.isEmpty()){
                 break;
             }
-            oneStepAllPrg(prgStates);
+            try {
+                oneStepForAllPrograms(prgStates);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
 
         executorService.shutdownNow();

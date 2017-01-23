@@ -2,7 +2,7 @@ package userInterface;
 
 import controller.Controller;
 import domain.PrgState;
-import domain.Statement;
+import domain.statements.Statement;
 import javafx.application.Application;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.value.ChangeListener;
@@ -20,7 +20,9 @@ import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import javafx.util.Callback;
 import utils.EntryIdentifier;
+import utils.FileData;
 import utils.Pair;
+import utils.ProcData;
 
 import java.io.BufferedReader;
 import java.util.ArrayList;
@@ -38,7 +40,8 @@ public class Main extends Application{
     ListView<String> outputView;
     TableView<Pair<String,Integer>> symbolTableView;
     TableView<Pair<Integer,Integer>> heapView;
-    TableView<Pair<Integer,Pair<String,BufferedReader>>> fileTableView;
+    TableView<Pair<String, ProcData>> procTableView;
+    TableView<Pair<Integer,FileData>> fileTableView;
     ListView<EntryIdentifier> programStatesView;
     Button runOneStepBtn;
     Button backButton;
@@ -125,9 +128,16 @@ public class Main extends Application{
         runOneStepBtn = new Button("Run one step");
         programsNr = new TextField(Integer.toString(1));
         programStatesView = new ListView<>(FXCollections.observableArrayList());
-
+        procTableView = new TableView<>();
+        TableColumn<Pair<String,ProcData>,String> leftProcColumn = new TableColumn<>("Name");
+        TableColumn<Pair<String,ProcData>,String> rightProcColumn = new TableColumn<>("ProcData");
+        procTableView.getColumns().add(leftProcColumn);
+        procTableView.getColumns().add(rightProcColumn);
+        setColumnsPropertyProcTable(leftProcColumn,rightProcColumn);
         rightPane.getChildren().add(new Label("Program States"));
         rightPane.getChildren().add(programStatesView);
+        rightPane.getChildren().add(new Label("Procedures Table"));
+        rightPane.getChildren().add(procTableView);
         rightPane.getChildren().add(runOneStepBtn);
         rightPane.getChildren().add(backButton);
         rightPane.getChildren().add(programsNr);
@@ -144,10 +154,10 @@ public class Main extends Application{
         setColumnPropertyHeap(leftHeapColumn,rightHeapColumn);
 
         fileTableView = new TableView<>();
-        TableColumn<Pair<Integer,Pair<String,BufferedReader>>,String> columnLeft=
-                new TableColumn<Pair<Integer,Pair<String,BufferedReader>>,String>("File Descriptor");
-        TableColumn<Pair<Integer,Pair<String,BufferedReader>>,String> columnRight=
-                new TableColumn<Pair<Integer,Pair<String,BufferedReader>>,String>("Name");
+        TableColumn<Pair<Integer,FileData>,String> columnLeft=
+                new TableColumn<Pair<Integer,FileData>,String>("File Descriptor");
+        TableColumn<Pair<Integer,FileData>,String> columnRight=
+                new TableColumn<Pair<Integer,FileData>,String>("Name");
 
         fileTableView.getColumns().add(columnLeft);
         fileTableView.getColumns().add(columnRight);
@@ -161,7 +171,20 @@ public class Main extends Application{
         middlePane.getChildren().add(fileTableView);
 
     }
-
+    public void setColumnsPropertyProcTable(TableColumn<Pair<String,ProcData>,String>left , TableColumn<Pair<String,ProcData>,String> right){
+        left.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<Pair<String, ProcData>, String>, ObservableValue<String>>() {
+            @Override
+            public ObservableValue<String> call(TableColumn.CellDataFeatures<Pair<String, ProcData>, String> param) {
+                return new SimpleStringProperty(param.getValue().getKey().toString());
+            }
+        });
+        right.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<Pair<String, ProcData>, String>, ObservableValue<String>>() {
+            @Override
+            public ObservableValue<String> call(TableColumn.CellDataFeatures<Pair<String, ProcData>, String> param) {
+                return new SimpleStringProperty(param.getValue().getValue().getParams().toString());
+            }
+        });
+    }
     public void setColumnPropertyHeap(TableColumn<Pair<Integer,Integer>,String> leftHeapColumn,
                                       TableColumn<Pair<Integer,Integer>,String> rightHeapColumn){
         leftHeapColumn.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<Pair<Integer, Integer>, String>, ObservableValue<String>>() {
@@ -179,20 +202,20 @@ public class Main extends Application{
         });
     }
 
-    public void setColumnsPropertyFileTable(TableColumn<Pair<Integer,Pair<String,BufferedReader>>,String> columnLeft,
-                                            TableColumn<Pair<Integer,Pair<String,BufferedReader>>,String> columnRight) {
-        columnLeft.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<Pair<Integer, Pair<String, BufferedReader>>, String>, ObservableValue<String>>() {
+    public void setColumnsPropertyFileTable(TableColumn<Pair<Integer,FileData>,String> columnLeft,
+                                            TableColumn<Pair<Integer,FileData>,String> columnRight) {
+        columnLeft.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<Pair<Integer, FileData>, String>, ObservableValue<String>>() {
             @Override
-            public ObservableValue<String> call(TableColumn.CellDataFeatures<Pair<Integer, Pair<String, BufferedReader>>, String> param) {
+            public ObservableValue<String> call(TableColumn.CellDataFeatures<Pair<Integer, FileData>, String> param) {
                 return new SimpleStringProperty(param.getValue().getKey().toString());
             }
 
         });
 
-        columnRight.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<Pair<Integer, Pair<String, BufferedReader>>, String>, ObservableValue<String>>() {
+        columnRight.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<Pair<Integer, FileData>, String>, ObservableValue<String>>() {
             @Override
-            public ObservableValue<String> call(TableColumn.CellDataFeatures<Pair<Integer, Pair<String, BufferedReader>>, String> param) {
-                return new SimpleStringProperty(param.getValue().getValue().toString());
+            public ObservableValue<String> call(TableColumn.CellDataFeatures<Pair<Integer, FileData>, String> param) {
+                return new SimpleStringProperty(param.getValue().getValue().getFilename());
             }
         });
     }
@@ -212,6 +235,7 @@ public class Main extends Application{
                         outputView.setItems(getOutOList(newValue));
                         heapView.setItems(getHeapOList(newValue));
                         fileTableView.setItems(getFileTableOList(newValue));
+                        procTableView.setItems(getProcDataOList(newValue));
                     }
                 }
         );
@@ -245,25 +269,38 @@ public class Main extends Application{
         return FXCollections.observableArrayList(ret);
     }
 
-    public ObservableList<Pair<Integer,Pair<String,BufferedReader>>> getFileTableOList(EntryIdentifier entryIdentifier){
+    public ObservableList<Pair<Integer,FileData>> getFileTableOList(EntryIdentifier entryIdentifier){
 
         PrgState state=entryIdentifier.getPrgState();
-        List<Pair<Integer,Pair<String,BufferedReader>>> ret=new ArrayList<>();
-        Iterator<Map.Entry<Integer,Pair<String,BufferedReader>>> iter=state.getFt().iterator();
+        List<Pair<Integer,FileData>> ret=new ArrayList<>();
+        Iterator<Map.Entry<Integer,FileData>> iter=state.getFt().iterator();
         while(iter.hasNext()){
-            Map.Entry<Integer,Pair<String,BufferedReader>> entry=iter.next();
+            Map.Entry<Integer,FileData> entry=iter.next();
             ret.add(new Pair<>(entry.getKey(),entry.getValue()));
         }
         return FXCollections.observableArrayList(ret);
 
     }
 
+    public ObservableList<Pair<String,ProcData>> getProcDataOList(EntryIdentifier entryIdentifier){
+        PrgState state = entryIdentifier.getPrgState();
+        List<Pair<String,ProcData>> list = new ArrayList<>();
+        Iterator<Map.Entry<String,ProcData>> iterator = state.getProcTable().iterator();
+        while (iterator.hasNext()){
+            Map.Entry<String,ProcData> entry = iterator.next();
+            list.add(new Pair<>(entry.getKey(),entry.getValue()));
+        }
+        return FXCollections.observableArrayList(list);
+    }
+
     public ObservableList<String> getOutOList(EntryIdentifier entryIdentifier){
         PrgState state=entryIdentifier.getPrgState();
         List<String> ret=new ArrayList<>();
         Iterator<Integer> iter=state.getOut().iterator();
-        while (iter.hasNext()){
-            ret.add(iter.next().toString());
+        if (iter!=null) {
+            while (iter.hasNext()) {
+                ret.add(iter.next().toString());
+            }
         }
         return FXCollections.observableArrayList(ret);
     }
@@ -318,15 +355,18 @@ public class Main extends Application{
         outputView.setItems(FXCollections.observableArrayList());
         heapView.setItems(FXCollections.observableArrayList());
         fileTableView.setItems(FXCollections.observableArrayList());
+        procTableView.setItems(FXCollections.observableArrayList());
     }
 
     public void populateIdentifierList(){
-        List<PrgState> prgStates = controller.getProgramStates();
-        List<EntryIdentifier> entryIdentifiers = new ArrayList<>();
-        for (PrgState prg : prgStates){
-            entryIdentifiers.add(new EntryIdentifier(prg));
+        if (controller!=null) {
+            List<PrgState> prgStates = controller.getProgramStates();
+            List<EntryIdentifier> entryIdentifiers = new ArrayList<>();
+            for (PrgState prg : prgStates) {
+                entryIdentifiers.add(new EntryIdentifier(prg));
+            }
+            programStatesView.setItems(FXCollections.observableArrayList(entryIdentifiers));
         }
-        programStatesView.setItems(FXCollections.observableArrayList(entryIdentifiers));
     }
 
     public static void main(String[] args) {
@@ -338,8 +378,10 @@ public class Main extends Application{
             @Override
             public void handle(WindowEvent event) {
                 controller=subordinateController.getController();
-                populateIdentifierList();
-                main.show();
+                if (controller!=null) {
+                    populateIdentifierList();
+                    main.show();
+                }
             }
         });
     }

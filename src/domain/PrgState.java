@@ -1,6 +1,6 @@
 package domain;
 
-import domain.Statement;
+import domain.statements.Statement;
 import exceptions.InterpretorException;
 import utils.*;
 
@@ -126,6 +126,13 @@ public class PrgState implements Serializable {
         return currentStatement.execute(this);
     }
 
+    public Stack<SymbolTable<String, Integer>> getSymbolTables() {
+        return symbolTables;
+    }
+
+    public ProcTable<String, ProcData> getProcTable() {
+        return procTable;
+    }
 
     @Override
     public String toString() {
@@ -141,7 +148,7 @@ public class PrgState implements Serializable {
         buffer.append(out.toString());
         buffer.append("\n");
         buffer.append("Proc Table:\n");
-        buffer.append(st.toString());
+        buffer.append(procTable.toString());
         buffer.append("\n");
         return buffer.toString();
     }

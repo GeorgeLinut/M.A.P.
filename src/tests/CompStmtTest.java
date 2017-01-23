@@ -1,6 +1,12 @@
 package tests;
 
 import domain.*;
+import domain.expressions.ArithmeticExpression;
+import domain.expressions.ConstantExpression;
+import domain.statements.AssignStmt;
+import domain.statements.CompStmt;
+import domain.statements.PrintStmt;
+import domain.statements.Statement;
 import junit.framework.TestCase;
 import utils.*;
 

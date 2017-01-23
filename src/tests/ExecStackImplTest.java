@@ -1,8 +1,8 @@
 package tests;
 
-import domain.AssignStmt;
-import domain.ConstantExpression;
-import domain.Statement;
+import domain.statements.AssignStmt;
+import domain.expressions.ConstantExpression;
+import domain.statements.Statement;
 import junit.framework.TestCase;
 import utils.ExecStackImpl;
 

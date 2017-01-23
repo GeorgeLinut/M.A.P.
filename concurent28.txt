@@ -1,0 +1,110 @@
+ExecStack
+CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
+SymbolTable
+v-->2
+Output
+0
+0
+1
+1
+Heap
+ExecStack
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+print( VarExpression{name='v'} )
+SymbolTable
+v-->2
+Output
+0
+0
+1
+1
+Heap
+ExecStack
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+SymbolTable
+v-->2
+Output
+0
+0
+1
+1
+2
+2
+Heap
+ExecStack
+CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
+SymbolTable
+v-->2
+Output
+0
+0
+1
+1
+Heap
+ExecStack
+CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
+SymbolTable
+v-->2
+Output
+0
+0
+1
+1
+Heap
+ExecStack
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+print( VarExpression{name='v'} )
+SymbolTable
+v-->2
+Output
+0
+0
+1
+1
+Heap
+ExecStack
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+print( VarExpression{name='v'} )
+SymbolTable
+v-->2
+Output
+0
+0
+1
+1
+Heap
+ExecStack
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+SymbolTable
+v-->2
+Output
+0
+0
+1
+1
+2
+2
+Heap
+ExecStack
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+SymbolTable
+v-->2
+Output
+0
+0
+1
+1
+2
+2
+Heap
+ExecStack
+SymbolTable
+v-->3
+Output
+0
+0
+1
+1
+2
+2
+Heap

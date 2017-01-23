@@ -1,0 +1,118 @@
+ExecStack
+CompStmt{first=AssignStmt{expr=ConstantExpression{value=5}, var='w'}, second=CompStmt{first=domain.statements.CallStmt@13c78c0b, second=CompStmt{first=print( VarExpression{name='v'} ), second=CompStmt{first=ForkStmt{statement=domain.statements.CallStmt@12843fce}, second=ForkStmt{statement=domain.statements.CallStmt@3dd3bcd}}}}}
+AssignStmt{expr=ConstantExpression{value=2}, var='v'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=AssignStmt{expr=ConstantExpression{value=5}, var='w'}, second=CompStmt{first=domain.statements.CallStmt@13c78c0b, second=CompStmt{first=print( VarExpression{name='v'} ), second=CompStmt{first=ForkStmt{statement=domain.statements.CallStmt@12843fce}, second=ForkStmt{statement=domain.statements.CallStmt@3dd3bcd}}}}}
+SymbolTable
+v-->2
+Output
+Heap
+ExecStack
+CompStmt{first=domain.statements.CallStmt@13c78c0b, second=CompStmt{first=print( VarExpression{name='v'} ), second=CompStmt{first=ForkStmt{statement=domain.statements.CallStmt@12843fce}, second=ForkStmt{statement=domain.statements.CallStmt@3dd3bcd}}}}
+AssignStmt{expr=ConstantExpression{value=5}, var='w'}
+SymbolTable
+v-->2
+Output
+Heap
+ExecStack
+CompStmt{first=domain.statements.CallStmt@13c78c0b, second=CompStmt{first=print( VarExpression{name='v'} ), second=CompStmt{first=ForkStmt{statement=domain.statements.CallStmt@12843fce}, second=ForkStmt{statement=domain.statements.CallStmt@3dd3bcd}}}}
+SymbolTable
+v-->2
+w-->5
+Output
+Heap
+ExecStack
+CompStmt{first=print( VarExpression{name='v'} ), second=CompStmt{first=ForkStmt{statement=domain.statements.CallStmt@12843fce}, second=ForkStmt{statement=domain.statements.CallStmt@3dd3bcd}}}
+domain.statements.CallStmt@13c78c0b
+SymbolTable
+v-->2
+w-->5
+Output
+Heap
+ExecStack
+CompStmt{first=print( VarExpression{name='v'} ), second=CompStmt{first=ForkStmt{statement=domain.statements.CallStmt@12843fce}, second=ForkStmt{statement=domain.statements.CallStmt@3dd3bcd}}}
+domain.statements.ReturnStmt@2344fc66
+CompStmt{first=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='a'}, operator=+, operand2=VarExpression{name='b'}}, var='v'}, second=print( VarExpression{name='v'} )}
+SymbolTable
+a-->20
+b-->5
+Output
+Heap
+ExecStack
+CompStmt{first=print( VarExpression{name='v'} ), second=CompStmt{first=ForkStmt{statement=domain.statements.CallStmt@12843fce}, second=ForkStmt{statement=domain.statements.CallStmt@3dd3bcd}}}
+domain.statements.ReturnStmt@2344fc66
+print( VarExpression{name='v'} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='a'}, operator=+, operand2=VarExpression{name='b'}}, var='v'}
+SymbolTable
+a-->20
+b-->5
+Output
+Heap
+ExecStack
+CompStmt{first=print( VarExpression{name='v'} ), second=CompStmt{first=ForkStmt{statement=domain.statements.CallStmt@12843fce}, second=ForkStmt{statement=domain.statements.CallStmt@3dd3bcd}}}
+domain.statements.ReturnStmt@2344fc66
+print( VarExpression{name='v'} )
+SymbolTable
+a-->20
+b-->5
+v-->25
+Output
+Heap
+ExecStack
+CompStmt{first=print( VarExpression{name='v'} ), second=CompStmt{first=ForkStmt{statement=domain.statements.CallStmt@12843fce}, second=ForkStmt{statement=domain.statements.CallStmt@3dd3bcd}}}
+domain.statements.ReturnStmt@2344fc66
+SymbolTable
+a-->20
+b-->5
+v-->25
+Output
+25
+Heap
+ExecStack
+CompStmt{first=print( VarExpression{name='v'} ), second=CompStmt{first=ForkStmt{statement=domain.statements.CallStmt@12843fce}, second=ForkStmt{statement=domain.statements.CallStmt@3dd3bcd}}}
+SymbolTable
+v-->2
+w-->5
+Output
+25
+Heap
+ExecStack
+CompStmt{first=ForkStmt{statement=domain.statements.CallStmt@12843fce}, second=ForkStmt{statement=domain.statements.CallStmt@3dd3bcd}}
+print( VarExpression{name='v'} )
+SymbolTable
+v-->2
+w-->5
+Output
+25
+Heap
+ExecStack
+CompStmt{first=ForkStmt{statement=domain.statements.CallStmt@12843fce}, second=ForkStmt{statement=domain.statements.CallStmt@3dd3bcd}}
+SymbolTable
+v-->2
+w-->5
+Output
+25
+2
+Heap
+ExecStack
+ForkStmt{statement=domain.statements.CallStmt@3dd3bcd}
+ForkStmt{statement=domain.statements.CallStmt@12843fce}
+SymbolTable
+v-->2
+w-->5
+Output
+25
+2
+Heap
+ExecStack
+ForkStmt{statement=domain.statements.CallStmt@3dd3bcd}
+SymbolTable
+v-->2
+w-->5
+Output
+25
+2
+Heap

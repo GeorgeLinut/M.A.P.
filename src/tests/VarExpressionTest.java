@@ -1,9 +1,7 @@
 package tests;
 
-import domain.AssignStmt;
-import domain.ConstantExpression;
-import domain.Expression;
-import domain.VarExpression;
+import domain.expressions.Expression;
+import domain.expressions.VarExpression;
 import junit.framework.TestCase;
 import utils.Heap;
 import utils.HeapImpl;

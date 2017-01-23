@@ -1,9 +1,8 @@
 package repo;
 
 import domain.PrgState;
-import domain.Statement;
+import domain.statements.Statement;
 import exceptions.InterpretorException;
-import groovy.util.MapEntry;
 import utils.*;
 
 import java.io.*;

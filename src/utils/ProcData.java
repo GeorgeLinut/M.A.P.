@@ -1,10 +1,9 @@
 package utils;
 
-import domain.Statement;
+import domain.statements.Statement;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by glinut on 1/22/2017.
@@ -32,5 +31,13 @@ public class ProcData implements Serializable{
 
     public void setParams(ArrayList<String> params) {
         this.params = params;
+    }
+
+    @Override
+    public String toString() {
+        return "ProcData{" +
+                "statement=" + statement +
+                ", params=" + params +
+                '}';
     }
 }

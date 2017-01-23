@@ -1,8 +1,7 @@
 package tests;
 
-import domain.ArithmeticExpression;
-import domain.ConstantExpression;
-import domain.Expression;
+import domain.expressions.ConstantExpression;
+import domain.expressions.Expression;
 import junit.framework.TestCase;
 import utils.Heap;
 import utils.HeapImpl;

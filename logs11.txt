@@ -1,5 +1,5 @@
 ExecStack
-CompStmt{first=WhileStmt{exp=ConstantExpression{value=10}, executeStatement=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='a'}, operator=+, operand2=ConstantExpression{value=1}}, var='a'}}, second=CompStmt{first=If(domain.BooleanExpression@61bbe9ba)
+CompStmt{first=WhileStmt{exp=ConstantExpression{value=10}, executeStatement=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='a'}, operator=+, operand2=ConstantExpression{value=1}}, var='a'}}, second=CompStmt{first=If(domain.expressions.BooleanExpression@61bbe9ba)
 then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
 else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} ), second=print( VarExpression{name='a'} )}}
 AssignStmt{expr=ArithmeticExpression{operand1=ConstantExpression{value=2}, operator=-, operand2=ConstantExpression{value=2}}, var='a'}
@@ -7,7 +7,7 @@ SymbolTable
 Output
 Heap
 ExecStack
-CompStmt{first=WhileStmt{exp=ConstantExpression{value=10}, executeStatement=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='a'}, operator=+, operand2=ConstantExpression{value=1}}, var='a'}}, second=CompStmt{first=If(domain.BooleanExpression@61bbe9ba)
+CompStmt{first=WhileStmt{exp=ConstantExpression{value=10}, executeStatement=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='a'}, operator=+, operand2=ConstantExpression{value=1}}, var='a'}}, second=CompStmt{first=If(domain.expressions.BooleanExpression@61bbe9ba)
 then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
 else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} ), second=print( VarExpression{name='a'} )}}
 SymbolTable
@@ -15,7 +15,7 @@ a-->0
 Output
 Heap
 ExecStack
-CompStmt{first=If(domain.BooleanExpression@61bbe9ba)
+CompStmt{first=If(domain.expressions.BooleanExpression@61bbe9ba)
 then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
 else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} ), second=print( VarExpression{name='a'} )}
 WhileStmt{exp=ConstantExpression{value=10}, executeStatement=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='a'}, operator=+, operand2=ConstantExpression{value=1}}, var='a'}}
@@ -26,7 +26,7 @@ Heap
 ExecStack
 WhileStmt{exp=ConstantExpression{value=9}, executeStatement=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='a'}, operator=+, operand2=ConstantExpression{value=1}}, var='a'}}
 AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='a'}, operator=+, operand2=ConstantExpression{value=1}}, var='a'}
-CompStmt{first=If(domain.BooleanExpression@61bbe9ba)
+CompStmt{first=If(domain.expressions.BooleanExpression@61bbe9ba)
 then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
 else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} ), second=print( VarExpression{name='a'} )}
 SymbolTable
@@ -37,7 +37,7 @@ ExecStack
 WhileStmt{exp=ConstantExpression{value=9}, executeStatement=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='a'}, operator=+, operand2=ConstantExpression{value=1}}, var='a'}}
 AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='a'}, operator=+, operand2=ConstantExpression{value=1}}, var='a'}
 print( VarExpression{name='a'} )
-If(domain.BooleanExpression@61bbe9ba)
+If(domain.expressions.BooleanExpression@61bbe9ba)
 then( AssignStmt{expr=ConstantExpression{value=2}, var='a'}
 else( AssignStmt{expr=ConstantExpression{value=3}, var='a'} )
 SymbolTable
