@@ -285,3 +285,6311 @@ Output
 0
 0
 Heap
+ExecStack
+CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
+SymbolTable
+v-->0
+Output
+Heap
+ExecStack
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+print( VarExpression{name='v'} )
+SymbolTable
+v-->0
+Output
+Heap
+ExecStack
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+SymbolTable
+v-->0
+Output
+null
+0
+Heap
+ExecStack
+CompStmt{first=AssignStmt{expr=ConstantExpression{value=20}, var='v'}, second=CompStmt{first=domain.statements.ForStmt@6e286d7f, second=print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )}}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=domain.statements.ForStmt@6e286d7f, second=print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )}
+AssignStmt{expr=ConstantExpression{value=20}, var='v'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=domain.statements.ForStmt@6e286d7f, second=print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )}
+SymbolTable
+v-->20
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+domain.statements.ForStmt@6e286d7f
+SymbolTable
+v-->20
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+CompStmt{first=AssignStmt{expr=ConstantExpression{value=0}, var='v'}, second=CompStmt{first=WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}, second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->20
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+CompStmt{first=WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}, second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
+AssignStmt{expr=ConstantExpression{value=0}, var='v'}
+SymbolTable
+v-->20
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+CompStmt{first=WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}, second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
+SymbolTable
+v-->0
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+CompStmt{first=AssignStmt{expr=ConstantExpression{value=20}, var='v'}, second=CompStmt{first=domain.statements.ForStmt@6e286d7f, second=print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )}}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=domain.statements.ForStmt@6e286d7f, second=print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )}
+AssignStmt{expr=ConstantExpression{value=20}, var='v'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=domain.statements.ForStmt@6e286d7f, second=print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )}
+SymbolTable
+v-->20
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+domain.statements.ForStmt@6e286d7f
+SymbolTable
+v-->20
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+CompStmt{first=AssignStmt{expr=ConstantExpression{value=0}, var='v'}, second=CompStmt{first=WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}, second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->20
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+CompStmt{first=WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}, second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
+AssignStmt{expr=ConstantExpression{value=0}, var='v'}
+SymbolTable
+v-->20
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+CompStmt{first=WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}, second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
+SymbolTable
+v-->0
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Heap
+ExecStack
+CompStmt{first=AssignStmt{expr=ConstantExpression{value=20}, var='v'}, second=CompStmt{first=domain.statements.ForStmt@7ac61959, second=print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )}}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=domain.statements.ForStmt@7ac61959, second=print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )}
+AssignStmt{expr=ConstantExpression{value=20}, var='v'}
+SymbolTable
+Output
+Heap
+ExecStack
+CompStmt{first=domain.statements.ForStmt@7ac61959, second=print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )}
+SymbolTable
+v-->20
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+domain.statements.ForStmt@7ac61959
+SymbolTable
+v-->20
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+CompStmt{first=AssignStmt{expr=ConstantExpression{value=0}, var='v'}, second=WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=CompStmt{first=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}, second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}}
+SymbolTable
+v-->20
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=CompStmt{first=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}, second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+AssignStmt{expr=ConstantExpression{value=0}, var='v'}
+SymbolTable
+v-->20
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=CompStmt{first=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}, second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=CompStmt{first=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}, second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+CompStmt{first=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}, second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
+SymbolTable
+v-->0
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=CompStmt{first=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}, second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->0
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=CompStmt{first=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}, second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+SymbolTable
+v-->0
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=CompStmt{first=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}, second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->1
+Output
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=CompStmt{first=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}, second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+CompStmt{first=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}, second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
+SymbolTable
+v-->1
+Output
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=CompStmt{first=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}, second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->1
+Output
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=CompStmt{first=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}, second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+SymbolTable
+v-->1
+Output
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=CompStmt{first=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}, second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->2
+Output
+0
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=CompStmt{first=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}, second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+CompStmt{first=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}, second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
+SymbolTable
+v-->2
+Output
+0
+1
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=CompStmt{first=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}, second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->2
+Output
+0
+1
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=CompStmt{first=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}, second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+SymbolTable
+v-->2
+Output
+0
+1
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+WhileStmt{exp=BooleanExpression{operator='<', operand1=VarExpression{name='v'}, operand2=ConstantExpression{value=3}}, executeStatement=CompStmt{first=ForkStmt{statement=CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}, second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}}
+SymbolTable
+v-->3
+Output
+0
+1
+Heap
+ExecStack
+print( ArithmeticExpression{operand1=VarExpression{name='v'}, operator=*, operand2=ConstantExpression{value=10}} )
+SymbolTable
+v-->3
+Output
+0
+1
+2
+Heap

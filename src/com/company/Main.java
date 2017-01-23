@@ -274,6 +274,31 @@ public class Main {
 
         PrgState state13 = new PrgState(execStack13,symt13,output13,stt13,fileT13,heap13,pro13);
         repo13.addPrg(state13);
+
+        Statement forkStmt = new ForkStmt(new CompStmt(
+                new PrintStmt(new VarExpression("v")),
+                new AssignStmt(new ArithmeticExpression('+',new VarExpression("v"),new ConstantExpression(1)),"v")
+        ));
+        Statement st14 = new CompStmt(
+                new AssignStmt(new ConstantExpression(20),"v"),
+                new CompStmt(
+                        new ForStmt("v",new ConstantExpression(0),new BooleanExpression("<",new VarExpression("v"),new ConstantExpression(3)),new ArithmeticExpression('+',new VarExpression("v"),new ConstantExpression(1)),forkStmt)
+                        ,new PrintStmt(new ArithmeticExpression('*',new VarExpression("v"),new ConstantExpression(10)))
+                )
+        );
+
+        Repository repo14 = new RepositoryImpl("logs14.txt");
+        Controller controller14 = new Controller(repo14);
+        ExecStackImpl<Statement> execStack14 = new ExecStackImpl<>();
+        SymbolTableImpl<String,Integer> symt14 = new SymbolTableImpl<>();
+        HeapImpl<Integer,Integer> heap14 = new HeapImpl<>();
+        OutputImpl<Integer> output14 = new OutputImpl<>();
+        FileTable<Integer,FileData> fileT14 = new FileTableImpl<>();
+        ProcTable<String,ProcData> pro14 = new ProcTableImpl<>();
+
+        PrgState state14 = new PrgState(execStack14,symt14,output14,st14,fileT14,heap14,pro14);
+        repo14.addPrg(state14);
+
         TextMenu textMenu = new TextMenu();
         textMenu.addCommand(new RunConcurrentExampleCommand("1",st1.toString(),controller1));
         textMenu.addCommand(new RunExampleCommand("2",st2.toString(),controller2));
@@ -288,6 +313,7 @@ public class Main {
         textMenu.addCommand(new RunExampleCommand("11","While Example"+st11.toString(),controller11));
         textMenu.addCommand(new RunConcurrentExampleCommand("12","Concurent Example",controller12));
         textMenu.addCommand(new RunConcurrentExampleCommand("13","Concurent Example",controller13));
+        textMenu.addCommand(new RunConcurrentExampleCommand("14","Concurent Example",controller14));
         textMenu.addCommand(new ExitCommand("0"," Exit"));
         textMenu.show();
 
