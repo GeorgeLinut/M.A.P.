@@ -42,7 +42,9 @@ public class Main extends Application{
     TableView<Pair<Integer,Integer>> heapView;
     TableView<Pair<String, ProcData>> procTableView;
     TableView<Pair<Integer,FileData>> fileTableView;
+    TableView<Pair<Integer,Integer>> lockTableView;
     ListView<EntryIdentifier> programStatesView;
+
     Button runOneStepBtn;
     Button backButton;
     Controller controller;
@@ -128,16 +130,24 @@ public class Main extends Application{
         runOneStepBtn = new Button("Run one step");
         programsNr = new TextField(Integer.toString(1));
         programStatesView = new ListView<>(FXCollections.observableArrayList());
-        procTableView = new TableView<>();
-        TableColumn<Pair<String,ProcData>,String> leftProcColumn = new TableColumn<>("Name");
-        TableColumn<Pair<String,ProcData>,String> rightProcColumn = new TableColumn<>("ProcData");
-        procTableView.getColumns().add(leftProcColumn);
-        procTableView.getColumns().add(rightProcColumn);
-        setColumnsPropertyProcTable(leftProcColumn,rightProcColumn);
+//        procTableView = new TableView<>();
+        lockTableView = new TableView<>();
+        TableColumn<Pair<Integer,Integer>,String> leftLockColumn = new TableColumn<>("Address");
+        TableColumn<Pair<Integer,Integer>,String> rightLockColumn = new TableColumn<>("Value");
+        lockTableView.getColumns().add(leftLockColumn);
+        lockTableView.getColumns().add(rightLockColumn);
+        setColumnPropertyLock(leftLockColumn,rightLockColumn);
+//        TableColumn<Pair<String,ProcData>,String> leftProcColumn = new TableColumn<>("Name");
+//        TableColumn<Pair<String,ProcData>,String> rightProcColumn = new TableColumn<>("ProcData");
+//        procTableView.getColumns().add(leftProcColumn);
+//        procTableView.getColumns().add(rightProcColumn);
+        //setColumnsPropertyProcTable(leftProcColumn,rightProcColumn);
         rightPane.getChildren().add(new Label("Program States"));
         rightPane.getChildren().add(programStatesView);
-        rightPane.getChildren().add(new Label("Procedures Table"));
-        rightPane.getChildren().add(procTableView);
+        rightPane.getChildren().add(new Label("Lock Table"));
+        rightPane.getChildren().add(lockTableView);
+//        rightPane.getChildren().add(new Label("Procedures Table"));
+//        rightPane.getChildren().add(procTableView);
         rightPane.getChildren().add(runOneStepBtn);
         rightPane.getChildren().add(backButton);
         rightPane.getChildren().add(programsNr);
@@ -185,6 +195,23 @@ public class Main extends Application{
             }
         });
     }
+
+    public void setColumnPropertyLock(TableColumn<Pair<Integer,Integer>,String> left,
+                                      TableColumn<Pair<Integer,Integer>,String> right){
+        left.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<Pair<Integer, Integer>, String>, ObservableValue<String>>() {
+            @Override
+            public ObservableValue<String> call(TableColumn.CellDataFeatures<Pair<Integer, Integer>, String> param) {
+                return new SimpleStringProperty(param.getValue().getKey().toString());
+            }
+        });
+        right.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<Pair<Integer, Integer>, String>, ObservableValue<String>>() {
+            @Override
+            public ObservableValue<String> call(TableColumn.CellDataFeatures<Pair<Integer, Integer>, String> param) {
+                return new SimpleStringProperty(param.getValue().getValue().toString());
+            }
+        });
+    }
+
     public void setColumnPropertyHeap(TableColumn<Pair<Integer,Integer>,String> leftHeapColumn,
                                       TableColumn<Pair<Integer,Integer>,String> rightHeapColumn){
         leftHeapColumn.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<Pair<Integer, Integer>, String>, ObservableValue<String>>() {
@@ -235,7 +262,8 @@ public class Main extends Application{
                         outputView.setItems(getOutOList(newValue));
                         heapView.setItems(getHeapOList(newValue));
                         fileTableView.setItems(getFileTableOList(newValue));
-                        procTableView.setItems(getProcDataOList(newValue));
+                      //  procTableView.setItems(getProcDataOList(newValue));
+                        lockTableView.setItems(getLockTableOList(newValue));
                     }
                 }
         );
@@ -288,6 +316,17 @@ public class Main extends Application{
         Iterator<Map.Entry<String,ProcData>> iterator = state.getProcTable().iterator();
         while (iterator.hasNext()){
             Map.Entry<String,ProcData> entry = iterator.next();
+            list.add(new Pair<>(entry.getKey(),entry.getValue()));
+        }
+        return FXCollections.observableArrayList(list);
+    }
+
+    public ObservableList<Pair<Integer,Integer>> getLockTableOList(EntryIdentifier entryIdentifier){
+        PrgState state = entryIdentifier.getPrgState();
+        List<Pair<Integer,Integer>> list = new ArrayList<>();
+        Iterator<Map.Entry<Integer,Integer>> iterator = state.getLockTable().iterator();
+        while (iterator.hasNext()){
+            Map.Entry<Integer,Integer> entry = iterator.next();
             list.add(new Pair<>(entry.getKey(),entry.getValue()));
         }
         return FXCollections.observableArrayList(list);
@@ -355,7 +394,8 @@ public class Main extends Application{
         outputView.setItems(FXCollections.observableArrayList());
         heapView.setItems(FXCollections.observableArrayList());
         fileTableView.setItems(FXCollections.observableArrayList());
-        procTableView.setItems(FXCollections.observableArrayList());
+        //procTableView.setItems(FXCollections.observableArrayList());
+        lockTableView.setItems(FXCollections.observableArrayList());
     }
 
     public void populateIdentifierList(){

@@ -1,11 +1,7 @@
 package domain.statements;
 
 import domain.PrgState;
-import utils.ProcTable;
-import utils.ProcTableImpl;
-import utils.ExecStackImpl;
-import utils.ProcData;
-import utils.SymbolTable;
+import utils.*;
 
 import java.util.Stack;
 
@@ -22,7 +18,7 @@ public class ForkStmt implements Statement {
     @Override
     public PrgState execute(PrgState p) {
         Stack<SymbolTable<String,Integer>> newS = p.cloneStStack();
-        PrgState newPrgState = new PrgState(new ExecStackImpl<Statement>(),p.getSt().clone(),p.getOut(),statement,p.getFt(),p.getHeap(),p.getProcTable());
+        PrgState newPrgState = new PrgState(new ExecStackImpl<Statement>(),p.getSt().clone(),p.getOut(),statement,p.getFt(),p.getHeap(),p.getLockTable());
         newPrgState.setSymbolTables(newS);
         return newPrgState;
     }

@@ -352,7 +352,59 @@ public class SubordinateController {
         PrgState state14 = new PrgState(execStack14,symt14,output14,st14,fileT14,heap14,pro14);
         repo14.addPrg(state14);
 
+        Statement f1 = new ForkStmt(new CompStmt(
+                new LockStmt("x"),
+                new CompStmt(
+                        new WriteHeapStmt("v1",new ArithmeticExpression('+',new
+                                ReadHeapExpression("v1"),new ConstantExpression(-1))
+                        ),new UnlockStmt("x"))
+        ));
 
+        Statement f2 = new ForkStmt(
+                new CompStmt(
+                        f1,new CompStmt(
+                        new LockStmt("x"),
+                        new CompStmt(
+                                new WriteHeapStmt("v1",new ArithmeticExpression('+',new
+                                        ReadHeapExpression("v1"),new ConstantExpression(1))
+                                ),new UnlockStmt("x"))
+                )
+                )
+        );
+
+        Statement f3 = new ForkStmt(
+                new CompStmt(
+                        new ForkStmt(
+                                new WriteHeapStmt("v2",new ArithmeticExpression('+',new
+                                        ReadHeapExpression("v2"),new ConstantExpression(1))
+                                )),new CompStmt(
+                        new WriteHeapStmt("v2",new ArithmeticExpression('+',new
+                                ReadHeapExpression("v2"),new ConstantExpression(1))),
+                        new UnlockStmt("x")
+                )
+                )
+        );
+
+        Statement st15 = new CompStmt(
+                new NewStmt("v1",new ConstantExpression(20)),
+                new CompStmt(new NewStmt("v2",new ConstantExpression(30)),
+                        new CompStmt(new NewLockStmt("x"),new CompStmt(
+                                f3,f2
+                        )
+                        ))
+        );
+
+        Repository repo15 = new RepositoryImpl("logs15.txt");
+        Controller controller15 = new Controller(repo15);
+        ExecStackImpl<Statement> execStack15 = new ExecStackImpl<>();
+        SymbolTableImpl<String,Integer> symt15 = new SymbolTableImpl<>();
+        HeapImpl<Integer,Integer> heap15 = new HeapImpl<>();
+        OutputImpl<Integer> output15 = new OutputImpl<>();
+        FileTable<Integer,FileData> fileT15 = new FileTableImpl<>();
+        LockImpl<Integer,Integer> lock15 = new LockImpl<>();
+
+        PrgState state15 = new PrgState(execStack15,symt15,output15,st15,fileT15,heap15,lock15);
+        repo15.addPrg(state15);
 
         programs = new ArrayList<>();
 
@@ -368,6 +420,7 @@ public class SubordinateController {
         programs.add(new ProgramCapsule(12,controller12,state12));
         programs.add(new ProgramCapsule(13,controller13,state13));
         programs.add(new ProgramCapsule(14,controller14,state14));
+        programs.add(new ProgramCapsule(15,controller15,state15));
 
 
 

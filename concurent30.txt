@@ -1,142 +1,76 @@
 ExecStack
-CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
+CompStmt{first=NewStmt{variable='v1', address=19, expression=ConstantExpression{value=20}}, second=CompStmt{first=NewStmt{variable='v2', address=20, expression=ConstantExpression{value=30}}, second=CompStmt{first=NewLockStmt{variable='x', adress=2}, second=CompStmt{first=ForkStmt{statement=CompStmt{first=ForkStmt{statement=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}}, second=CompStmt{first=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}}}, second=ForkStmt{statement=CompStmt{first=ForkStmt{statement=CompStmt{first=LockStmt{variable='x'}, second=CompStmt{first=WriteHeapStmt{varName='v1', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v1'}, operator=+, operand2=ConstantExpression{value=-1}}}, second=UnlockStmt{variable='x'}}}}, second=CompStmt{first=LockStmt{variable='x'}, second=CompStmt{first=WriteHeapStmt{varName='v1', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v1'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}}}}}}}}
 SymbolTable
-v-->0
 Output
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
 Heap
 ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
-print( VarExpression{name='v'} )
+CompStmt{first=NewStmt{variable='v2', address=20, expression=ConstantExpression{value=30}}, second=CompStmt{first=NewLockStmt{variable='x', adress=2}, second=CompStmt{first=ForkStmt{statement=CompStmt{first=ForkStmt{statement=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}}, second=CompStmt{first=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}}}, second=ForkStmt{statement=CompStmt{first=ForkStmt{statement=CompStmt{first=LockStmt{variable='x'}, second=CompStmt{first=WriteHeapStmt{varName='v1', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v1'}, operator=+, operand2=ConstantExpression{value=-1}}}, second=UnlockStmt{variable='x'}}}}, second=CompStmt{first=LockStmt{variable='x'}, second=CompStmt{first=WriteHeapStmt{varName='v1', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v1'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}}}}}}}
+NewStmt{variable='v1', address=19, expression=ConstantExpression{value=20}}
 SymbolTable
-v-->0
 Output
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
 Heap
 ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+CompStmt{first=NewStmt{variable='v2', address=20, expression=ConstantExpression{value=30}}, second=CompStmt{first=NewLockStmt{variable='x', adress=2}, second=CompStmt{first=ForkStmt{statement=CompStmt{first=ForkStmt{statement=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}}, second=CompStmt{first=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}}}, second=ForkStmt{statement=CompStmt{first=ForkStmt{statement=CompStmt{first=LockStmt{variable='x'}, second=CompStmt{first=WriteHeapStmt{varName='v1', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v1'}, operator=+, operand2=ConstantExpression{value=-1}}}, second=UnlockStmt{variable='x'}}}}, second=CompStmt{first=LockStmt{variable='x'}, second=CompStmt{first=WriteHeapStmt{varName='v1', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v1'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}}}}}}}
 SymbolTable
-v-->0
+v1-->19
 Output
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
 Heap
+19-->20
 ExecStack
-CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
+CompStmt{first=NewLockStmt{variable='x', adress=2}, second=CompStmt{first=ForkStmt{statement=CompStmt{first=ForkStmt{statement=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}}, second=CompStmt{first=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}}}, second=ForkStmt{statement=CompStmt{first=ForkStmt{statement=CompStmt{first=LockStmt{variable='x'}, second=CompStmt{first=WriteHeapStmt{varName='v1', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v1'}, operator=+, operand2=ConstantExpression{value=-1}}}, second=UnlockStmt{variable='x'}}}}, second=CompStmt{first=LockStmt{variable='x'}, second=CompStmt{first=WriteHeapStmt{varName='v1', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v1'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}}}}}}
+NewStmt{variable='v2', address=20, expression=ConstantExpression{value=30}}
 SymbolTable
-v-->0
+v1-->19
 Output
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
 Heap
+19-->20
 ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
-print( VarExpression{name='v'} )
+CompStmt{first=NewLockStmt{variable='x', adress=2}, second=CompStmt{first=ForkStmt{statement=CompStmt{first=ForkStmt{statement=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}}, second=CompStmt{first=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}}}, second=ForkStmt{statement=CompStmt{first=ForkStmt{statement=CompStmt{first=LockStmt{variable='x'}, second=CompStmt{first=WriteHeapStmt{varName='v1', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v1'}, operator=+, operand2=ConstantExpression{value=-1}}}, second=UnlockStmt{variable='x'}}}}, second=CompStmt{first=LockStmt{variable='x'}, second=CompStmt{first=WriteHeapStmt{varName='v1', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v1'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}}}}}}
 SymbolTable
-v-->0
+v1-->19
+v2-->20
 Output
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
 Heap
+19-->20
+20-->30
 ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+CompStmt{first=ForkStmt{statement=CompStmt{first=ForkStmt{statement=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}}, second=CompStmt{first=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}}}, second=ForkStmt{statement=CompStmt{first=ForkStmt{statement=CompStmt{first=LockStmt{variable='x'}, second=CompStmt{first=WriteHeapStmt{varName='v1', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v1'}, operator=+, operand2=ConstantExpression{value=-1}}}, second=UnlockStmt{variable='x'}}}}, second=CompStmt{first=LockStmt{variable='x'}, second=CompStmt{first=WriteHeapStmt{varName='v1', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v1'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}}}}}
+NewLockStmt{variable='x', adress=2}
 SymbolTable
-v-->0
+v1-->19
+v2-->20
 Output
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
 Heap
+19-->20
+20-->30
+ExecStack
+CompStmt{first=ForkStmt{statement=CompStmt{first=ForkStmt{statement=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}}, second=CompStmt{first=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}}}, second=ForkStmt{statement=CompStmt{first=ForkStmt{statement=CompStmt{first=LockStmt{variable='x'}, second=CompStmt{first=WriteHeapStmt{varName='v1', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v1'}, operator=+, operand2=ConstantExpression{value=-1}}}, second=UnlockStmt{variable='x'}}}}, second=CompStmt{first=LockStmt{variable='x'}, second=CompStmt{first=WriteHeapStmt{varName='v1', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v1'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}}}}}
+SymbolTable
+x-->2
+v1-->19
+v2-->20
+Output
+Heap
+19-->20
+20-->30
+ExecStack
+ForkStmt{statement=CompStmt{first=ForkStmt{statement=CompStmt{first=LockStmt{variable='x'}, second=CompStmt{first=WriteHeapStmt{varName='v1', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v1'}, operator=+, operand2=ConstantExpression{value=-1}}}, second=UnlockStmt{variable='x'}}}}, second=CompStmt{first=LockStmt{variable='x'}, second=CompStmt{first=WriteHeapStmt{varName='v1', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v1'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}}}}
+ForkStmt{statement=CompStmt{first=ForkStmt{statement=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}}, second=CompStmt{first=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}}}
+SymbolTable
+x-->2
+v1-->19
+v2-->20
+Output
+Heap
+19-->20
+20-->30
+ExecStack
+ForkStmt{statement=CompStmt{first=ForkStmt{statement=CompStmt{first=LockStmt{variable='x'}, second=CompStmt{first=WriteHeapStmt{varName='v1', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v1'}, operator=+, operand2=ConstantExpression{value=-1}}}, second=UnlockStmt{variable='x'}}}}, second=CompStmt{first=LockStmt{variable='x'}, second=CompStmt{first=WriteHeapStmt{varName='v1', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v1'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}}}}
+SymbolTable
+x-->2
+v1-->19
+v2-->20
+Output
+Heap
+19-->20
+20-->30

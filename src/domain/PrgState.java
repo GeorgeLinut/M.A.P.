@@ -20,7 +20,20 @@ public class PrgState implements Serializable {
     private FileTable<Integer,FileData> ft;
     private  Heap<Integer,Integer>heap;
     private ProcTable<String,ProcData>procTable;
+    private Lock<Integer,Integer> lockTable;
 
+    public PrgState(ExecStack<Statement> execStack, SymbolTable<String, Integer> st, Output<Integer> out, Statement prg, FileTable<Integer, FileData> ft, Heap<Integer, Integer> heap) {
+        id = PrgStateIdGenerator.generate();
+        this.execStack = execStack;
+        this.symbolTables = new Stack<>();
+        this.st = st;
+        this.symbolTables.push(st);
+        this.out = out;
+        this.prg = prg;
+        this.ft = ft;
+        this.heap = heap;
+        execStack.push(prg);
+    }
 
     public PrgState(ExecStack<Statement> execStack, SymbolTable<String, Integer> st, Output<Integer> out, Statement prg, FileTable<Integer, FileData> ft, Heap<Integer, Integer> heap,ProcTable<String,ProcData>procTable) {
         id = PrgStateIdGenerator.generate();
@@ -36,9 +49,31 @@ public class PrgState implements Serializable {
         execStack.push(prg);
     }
 
+    public PrgState(ExecStack<Statement> execStack, SymbolTable<String, Integer> st, Output<Integer> out, Statement prg, FileTable<Integer, FileData> ft, Heap<Integer, Integer> heap,Lock<Integer,Integer> locktable) {
+        id = PrgStateIdGenerator.generate();
+        this.execStack = execStack;
+        this.symbolTables = new Stack<>();
+        this.st = st;
+        this.symbolTables.push(st);
+        this.out = out;
+        this.prg = prg;
+        this.ft = ft;
+        this.heap = heap;
+        this.lockTable = locktable;
+        execStack.push(prg);
+    }
+
     public void pushSymbolTable(SymbolTable<String,Integer> symbolTable){
         this.symbolTables.push(symbolTable);
         this.st = symbolTable;
+    }
+
+    public Lock<Integer, Integer> getLockTable() {
+        return lockTable;
+    }
+
+    public void setLockTable(Lock<Integer, Integer> lockTable) {
+        this.lockTable = lockTable;
     }
 
     public Stack<SymbolTable<String,Integer>> cloneStStack(){

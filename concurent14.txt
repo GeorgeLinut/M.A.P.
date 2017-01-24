@@ -1,439 +1,269 @@
 ExecStack
-CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
+CompStmt{first=ForkStmt{statement=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}}, second=CompStmt{first=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}}
 SymbolTable
-v-->2
+x-->1
+v1-->9
+v2-->10
 Output
-null
-0
-1
-1
 Heap
+9-->20
+10-->30
 ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
-print( VarExpression{name='v'} )
+CompStmt{first=ForkStmt{statement=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}}, second=CompStmt{first=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}}
 SymbolTable
-v-->2
+x-->1
+v1-->9
+v2-->10
 Output
-null
-0
-1
-1
 Heap
+9-->20
+10-->30
 ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+CompStmt{first=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}
+ForkStmt{statement=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}}
 SymbolTable
-v-->2
+x-->1
+v1-->9
+v2-->10
 Output
-null
-0
-1
-1
-2
-2
 Heap
+9-->20
+10-->30
 ExecStack
-CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
+CompStmt{first=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}
+ForkStmt{statement=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}}
 SymbolTable
-v-->2
+x-->1
+v1-->9
+v2-->10
 Output
-0
-0
-1
-1
 Heap
+9-->20
+10-->30
 ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
-print( VarExpression{name='v'} )
+CompStmt{first=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}
 SymbolTable
-v-->2
+x-->1
+v1-->9
+v2-->10
 Output
-0
-0
-1
-1
 Heap
+9-->20
+10-->30
 ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+CompStmt{first=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}
 SymbolTable
-v-->2
+x-->1
+v1-->9
+v2-->10
 Output
-0
-0
-1
-1
-2
-2
 Heap
+9-->20
+10-->30
 ExecStack
-CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
+UnlockStmt{variable='x'}
+WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}
 SymbolTable
-v-->2
+x-->1
+v1-->9
+v2-->10
 Output
-null
-0
-1
-1
 Heap
+9-->20
+10-->31
 ExecStack
-CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
+UnlockStmt{variable='x'}
+WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}
 SymbolTable
-v-->2
+x-->1
+v1-->9
+v2-->10
 Output
-null
-0
-1
-1
 Heap
+9-->20
+10-->31
 ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
-print( VarExpression{name='v'} )
+UnlockStmt{variable='x'}
 SymbolTable
-v-->2
+x-->1
+v1-->9
+v2-->10
 Output
-null
-0
-1
-1
 Heap
+9-->20
+10-->32
 ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
-print( VarExpression{name='v'} )
+UnlockStmt{variable='x'}
 SymbolTable
-v-->2
+x-->1
+v1-->9
+v2-->10
 Output
-null
-0
-1
-1
 Heap
-ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
-SymbolTable
-v-->2
-Output
-null
-0
-1
-1
-2
-2
-Heap
-ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
-SymbolTable
-v-->2
-Output
-null
-0
-1
-1
-2
-2
-Heap
+9-->20
+10-->32
 ExecStack
 SymbolTable
-v-->3
+x-->1
+v1-->9
+v2-->10
 Output
-null
-0
-1
-1
-2
-2
 Heap
+9-->20
+10-->32
 ExecStack
-CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
+CompStmt{first=ForkStmt{statement=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}}, second=CompStmt{first=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}}
 SymbolTable
-v-->2
+x-->1
+v1-->9
+v2-->10
 Output
-null
-0
-1
-1
 Heap
+9-->20
+10-->30
 ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
-print( VarExpression{name='v'} )
+CompStmt{first=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}
+ForkStmt{statement=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}}
 SymbolTable
-v-->2
+x-->1
+v1-->9
+v2-->10
 Output
-null
-0
-1
-1
 Heap
+9-->20
+10-->30
 ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+CompStmt{first=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}
 SymbolTable
-v-->2
+x-->1
+v1-->9
+v2-->10
 Output
-null
-0
-1
-1
-2
-2
 Heap
+9-->20
+10-->30
 ExecStack
-CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
+UnlockStmt{variable='x'}
+WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}
 SymbolTable
-v-->2
+x-->1
+v1-->9
+v2-->10
 Output
-null
-0
-1
-1
 Heap
+9-->20
+10-->31
 ExecStack
-CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
+UnlockStmt{variable='x'}
 SymbolTable
-v-->2
+x-->1
+v1-->9
+v2-->10
 Output
-null
-0
-1
-1
 Heap
+9-->20
+10-->32
 ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
-print( VarExpression{name='v'} )
+CompStmt{first=ForkStmt{statement=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}}, second=CompStmt{first=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}}
 SymbolTable
-v-->2
+x-->1
+v1-->9
+v2-->10
 Output
-null
-0
-1
-1
 Heap
+9-->20
+10-->30
 ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
-print( VarExpression{name='v'} )
+CompStmt{first=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}
+ForkStmt{statement=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}}
 SymbolTable
-v-->2
+x-->1
+v1-->9
+v2-->10
 Output
-null
-0
-1
-1
 Heap
+9-->20
+10-->30
 ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+CompStmt{first=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}
 SymbolTable
-v-->2
+x-->1
+v1-->9
+v2-->10
 Output
-null
-0
-1
-1
-2
 Heap
+9-->20
+10-->30
 ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+UnlockStmt{variable='x'}
+WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}
 SymbolTable
-v-->2
+x-->1
+v1-->9
+v2-->10
 Output
-null
-0
-1
-1
-2
 Heap
+9-->20
+10-->31
 ExecStack
+UnlockStmt{variable='x'}
 SymbolTable
-v-->3
+x-->1
+v1-->9
+v2-->10
 Output
-null
-0
-1
-1
-2
 Heap
+9-->20
+10-->32
 ExecStack
-CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
+CompStmt{first=ForkStmt{statement=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}}, second=CompStmt{first=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}}
 SymbolTable
-v-->2
+x-->1
+v1-->9
+v2-->10
 Output
-null
-0
-1
-1
 Heap
+9-->20
+10-->30
 ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
-print( VarExpression{name='v'} )
+CompStmt{first=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}
+ForkStmt{statement=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}}
 SymbolTable
-v-->2
+x-->1
+v1-->9
+v2-->10
 Output
-null
-0
-1
-1
 Heap
+9-->20
+10-->30
 ExecStack
-CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
+CompStmt{first=WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}, second=UnlockStmt{variable='x'}}
 SymbolTable
-v-->2
+x-->1
+v1-->9
+v2-->10
 Output
-0
-0
-1
-1
 Heap
+9-->20
+10-->30
 ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
-print( VarExpression{name='v'} )
+UnlockStmt{variable='x'}
+WriteHeapStmt{varName='v2', expression=ArithmeticExpression{operand1=ReadHeapExpression{variable='v2'}, operator=+, operand2=ConstantExpression{value=1}}}
 SymbolTable
-v-->2
+x-->1
+v1-->9
+v2-->10
 Output
-0
-0
-1
-1
 Heap
+9-->20
+10-->31
 ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
+UnlockStmt{variable='x'}
 SymbolTable
-v-->2
+x-->1
+v1-->9
+v2-->10
 Output
-0
-0
-1
-1
-2
-2
 Heap
-ExecStack
-CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
-SymbolTable
-v-->2
-Output
-0
-0
-1
-1
-Heap
-ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
-print( VarExpression{name='v'} )
-SymbolTable
-v-->2
-Output
-0
-0
-1
-1
-Heap
-ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
-SymbolTable
-v-->2
-Output
-0
-0
-1
-1
-2
-2
-Heap
-ExecStack
-CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
-SymbolTable
-v-->2
-Output
-null
-0
-1
-1
-Heap
-ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
-print( VarExpression{name='v'} )
-SymbolTable
-v-->2
-Output
-null
-0
-1
-1
-Heap
-ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
-SymbolTable
-v-->2
-Output
-null
-0
-1
-1
-2
-2
-Heap
-ExecStack
-CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
-SymbolTable
-v-->0
-Output
-0
-Heap
-ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
-print( VarExpression{name='v'} )
-SymbolTable
-v-->0
-Output
-0
-Heap
-ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
-SymbolTable
-v-->0
-Output
-0
-0
-Heap
-ExecStack
-CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
-SymbolTable
-v-->0
-Output
-0
-Heap
-ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
-print( VarExpression{name='v'} )
-SymbolTable
-v-->0
-Output
-0
-Heap
-ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
-SymbolTable
-v-->0
-Output
-0
-0
-Heap
-ExecStack
-CompStmt{first=print( VarExpression{name='v'} ), second=AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}}
-SymbolTable
-v-->1
-Output
-0
-Heap
-ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
-print( VarExpression{name='v'} )
-SymbolTable
-v-->1
-Output
-0
-Heap
-ExecStack
-AssignStmt{expr=ArithmeticExpression{operand1=VarExpression{name='v'}, operator=+, operand2=ConstantExpression{value=1}}, var='v'}
-SymbolTable
-v-->1
-Output
-0
-1
-Heap
+9-->20
+10-->32
